@@ -176,25 +176,27 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-0 overflow-hidden">
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 text-white">
-                    {service.icon}
+              <Link key={index} to={service.link} className="block">
+                <Card className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-0 overflow-hidden h-full">
+                  <div className="relative h-48 overflow-hidden">
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 text-white">
+                      {service.icon}
+                    </div>
                   </div>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-xl text-stone-900">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-stone-600">{service.description}</CardDescription>
-                </CardContent>
-              </Card>
+                  <CardHeader>
+                    <CardTitle className="text-xl text-stone-900">{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-stone-600">{service.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
