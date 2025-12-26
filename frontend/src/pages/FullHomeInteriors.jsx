@@ -476,7 +476,7 @@ const FullHomeInteriors = () => {
                   </CardContent>
                 </Card>
                 {index < workflow.length - 1 && (
-                  <div className="hidden lg:block absolute left-10 top-full w-0.5 h-12 bg-amber-200 -translate-x-1/2"></div>
+                  <div className="hidden lg:block absolute left-10 top-full w-0.5 h-12 bg-brand-muted -translate-x-1/2"></div>
                 )}
               </div>
             ))}
