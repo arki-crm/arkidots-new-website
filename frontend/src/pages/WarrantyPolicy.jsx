@@ -15,7 +15,7 @@ const WarrantyPolicy = () => {
         <meta name="description" content="Arki Dots Warranty Policy: 10-year flat warranty and lifetime free service on modular products. Learn what's covered and how to claim service." />
       </Helmet>
 
-      <section className="py-12 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="py-12 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-brand text-white rounded-full mb-6">
@@ -30,7 +30,7 @@ const WarrantyPolicy = () => {
       <section className="py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Premium Highlights */}
-          <div className="mb-12 bg-gradient-to-br from-amber-50 to-stone-50 rounded-2xl p-8 border-2 border-amber-200">
+          <div className="mb-12 bg-gradient-to-br from-brand-soft to-stone-50 rounded-2xl p-8 border-2 border-brand-muted">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mx-auto mb-4">
@@ -70,7 +70,7 @@ const WarrantyPolicy = () => {
                   <li>TV Units and Entertainment Centers</li>
                   <li>Study Tables and Workstations</li>
                 </ul>
-                <div className="mt-4 bg-amber-50 border-l-4 border-brand p-4 rounded-r-lg">
+                <div className="mt-4 bg-brand-soft border-l-4 border-brand p-4 rounded-r-lg">
                   <p className="text-sm text-stone-700">
                     <strong>Note:</strong> Civil work, painting, false ceiling, and tiling are covered under a separate 1-year workmanship warranty.
                   </p>
@@ -282,7 +282,7 @@ const WarrantyPolicy = () => {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-br from-amber-50 to-stone-50 border-2 border-amber-200 p-6 rounded-lg">
+              <div className="bg-gradient-to-br from-brand-soft to-stone-50 border-2 border-brand-muted p-6 rounded-lg">
                 <h3 className="font-bold text-stone-900 mb-3">Our Commitment</h3>
                 <p className="text-stone-700 leading-relaxed">
                   At Arki Dots, quality and customer satisfaction are paramount. Our comprehensive warranty and lifetime service commitment reflect our confidence in our products and our dedication to your long-term satisfaction. We stand behind every modular product we create.

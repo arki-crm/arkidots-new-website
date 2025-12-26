@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
         <meta name="description" content="Privacy Policy for Arki Dots. Learn how we collect, use, and protect your personal information when you use our interior design services." />
       </Helmet>
 
-      <section className="py-12 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="py-12 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-brand text-white rounded-full mb-6">
@@ -162,7 +162,7 @@ const PrivacyPolicy = () => {
                 </div>
               </div>
 
-              <div className="bg-amber-50 border-l-4 border-brand p-6 rounded-r-lg">
+              <div className="bg-brand-soft border-l-4 border-brand p-6 rounded-r-lg">
                 <p className="text-sm text-stone-700 leading-relaxed">
                   <strong>Note:</strong> This Privacy Policy may be updated periodically to reflect changes in our practices or legal requirements. We encourage you to review this page regularly for the latest information.
                 </p>

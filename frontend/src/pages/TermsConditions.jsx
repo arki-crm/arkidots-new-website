@@ -15,7 +15,7 @@ const TermsConditions = () => {
         <meta name="description" content="Terms and Conditions for Arki Dots interior design services. Understand our service terms, payment policies, and customer responsibilities." />
       </Helmet>
 
-      <section className="py-12 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="py-12 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-brand text-white rounded-full mb-6">
@@ -201,7 +201,7 @@ const TermsConditions = () => {
                 </p>
               </div>
 
-              <div className="bg-amber-50 border-l-4 border-brand p-6 rounded-r-lg">
+              <div className="bg-brand-soft border-l-4 border-brand p-6 rounded-r-lg">
                 <div className="flex items-start gap-3">
                   <AlertCircle className="w-6 h-6 text-brand flex-shrink-0 mt-0.5" />
                   <div>
