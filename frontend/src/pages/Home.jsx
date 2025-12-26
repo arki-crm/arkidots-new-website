@@ -202,6 +202,196 @@ const Home = () => {
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section className="py-20 bg-stone-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">How It Works</h2>
+            <p className="text-lg text-stone-600 max-w-2xl mx-auto">
+              A transparent, step-by-step process from consultation to move-in
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            {/* Step 1 */}
+            <div className="relative pb-12 mb-12 border-l-2 border-amber-200 ml-8 last:border-l-0">
+              <div className="absolute -left-10 top-0 w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
+                01
+              </div>
+              <div className="ml-12">
+                <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6 sm:p-8">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center">
+                        <UserCheck className="w-6 h-6" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-stone-900 mb-2">Meet a Designer</h3>
+                        <p className="text-stone-600 leading-relaxed mb-4">
+                          Free consultation to understand your requirements, budget, and design preferences. Our designer visits your Kerala home to assess the space and discuss possibilities.
+                        </p>
+                        <div className="inline-block bg-green-50 text-green-700 px-4 py-2 rounded-full text-sm font-semibold">
+                          Free Consultation
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="relative pb-12 mb-12 border-l-2 border-amber-200 ml-8">
+              <div className="absolute -left-10 top-0 w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
+                02
+              </div>
+              <div className="ml-12">
+                <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6 sm:p-8">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center">
+                        <Pencil className="w-6 h-6" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-stone-900 mb-2">Book the Design</h3>
+                        <p className="text-stone-600 leading-relaxed mb-4">
+                          Confirm the project and begin detailed design phase. We create 3D visualizations, material selections, and comprehensive project plan for your approval.
+                        </p>
+                        <div className="flex flex-wrap gap-3">
+                          <div className="inline-block bg-amber-50 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold border border-amber-200">
+                            5% Payment or ₹25,000
+                          </div>
+                          <span className="text-stone-500 text-sm self-center">(Whichever is lower)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="relative pb-12 mb-12 border-l-2 border-amber-200 ml-8">
+              <div className="absolute -left-10 top-0 w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
+                03
+              </div>
+              <div className="ml-12">
+                <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6 sm:p-8">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center">
+                        <PlayCircle className="w-6 h-6" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-stone-900 mb-2">Execution Begins</h3>
+                        <p className="text-stone-600 leading-relaxed mb-4">
+                          Production and execution start after your design approval. Manufacturing of modular components, procurement of materials, and coordination of work begins.
+                        </p>
+                        <div className="inline-block bg-amber-50 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold border border-amber-200">
+                          50% Payment
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* Step 4 */}
+            <div className="relative pb-12 mb-12 border-l-2 border-amber-200 ml-8">
+              <div className="absolute -left-10 top-0 w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
+                04
+              </div>
+              <div className="ml-12">
+                <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6 sm:p-8">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center">
+                        <Package className="w-6 h-6" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-stone-900 mb-2">Ready for Installation</h3>
+                        <p className="text-stone-600 leading-relaxed mb-4">
+                          All work completed and quality-checked. Final payment is made before professional installation and delivery at your Kerala home begins.
+                        </p>
+                        <div className="inline-block bg-amber-50 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold border border-amber-200">
+                          100% Payment Complete
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* Step 5 */}
+            <div className="relative ml-8">
+              <div className="absolute -left-10 top-0 w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
+                05
+              </div>
+              <div className="ml-12">
+                <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-white to-amber-50">
+                  <CardContent className="p-6 sm:p-8">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center">
+                        <Key className="w-6 h-6" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-stone-900 mb-2">Move In & Enjoy</h3>
+                        <p className="text-stone-600 leading-relaxed mb-4">
+                          Project handover with final inspection. Your home is ready to enjoy with our 10-year warranty on modular products and lifetime free service support.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                            <CheckCircle2 className="w-4 h-4" />
+                            10-Year Warranty
+                          </div>
+                          <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                            <CheckCircle2 className="w-4 h-4" />
+                            Lifetime Service
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+
+          {/* Payment Summary Box */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <Card className="border-2 border-amber-200 shadow-xl bg-gradient-to-br from-amber-50 to-white">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-bold text-stone-900 mb-6 text-center">Payment Schedule Summary</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-amber-600 mb-2">5%</div>
+                    <p className="text-sm text-stone-600 font-medium">Design Booking</p>
+                    <p className="text-xs text-stone-500 mt-1">(or ₹25,000)</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-amber-600 mb-2">50%</div>
+                    <p className="text-sm text-stone-600 font-medium">Execution Starts</p>
+                    <p className="text-xs text-stone-500 mt-1">Production begins</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-amber-600 mb-2">45%</div>
+                    <p className="text-sm text-stone-600 font-medium">Before Installation</p>
+                    <p className="text-xs text-stone-500 mt-1">Final payment</p>
+                  </div>
+                </div>
+                <div className="mt-6 pt-6 border-t border-amber-200 text-center">
+                  <p className="text-sm text-stone-600">
+                    <strong>Note:</strong> All payments are clearly defined before work begins. No hidden costs or surprise charges.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
