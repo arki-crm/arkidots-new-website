@@ -10,6 +10,7 @@ import KozhikodeInteriors from './pages/KozhikodeInteriors';
 import Contact from './pages/Contact';
 import HomeRenovation from './pages/HomeRenovation';
 import CustomFurniture from './pages/CustomFurniture';
+import AboutUs from './pages/AboutUs';
 import { Toaster } from './components/ui/sonner';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/home-renovation" element={<HomeRenovation />} />
             <Route path="/custom-furniture" element={<CustomFurniture />} />
+            <Route path="/about" element={<AboutUs />} />
           </Routes>
         </main>
         <Footer />
