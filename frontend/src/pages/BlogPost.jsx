@@ -38,7 +38,7 @@ const BlogPost = () => {
         <div className="text-center">
           <h1 className="text-3xl font-bold text-stone-900 mb-4">Article Not Found</h1>
           <p className="text-stone-600 mb-6">The article you are looking for does not exist.</p>
-          <Link to="/blog" className="text-amber-600 hover:text-amber-700 font-medium">
+          <Link to="/blog" className="text-brand hover:text-brand-dark font-medium">
             ← Back to Blog
           </Link>
         </div>
@@ -76,7 +76,7 @@ const BlogPost = () => {
             {/* Breadcrumb */}
             <Link
               to="/blog"
-              className="inline-flex items-center text-stone-300 hover:text-amber-400 transition-colors mb-4 text-sm"
+              className="inline-flex items-center text-stone-300 hover:text-brand-light transition-colors mb-4 text-sm"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Blog
@@ -84,7 +84,7 @@ const BlogPost = () => {
 
             {/* Category */}
             <div className="mb-4">
-              <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+              <span className="bg-brand text-white px-3 py-1 rounded-full text-sm font-medium">
                 {post.category}
               </span>
             </div>
@@ -133,9 +133,9 @@ const BlogPost = () => {
                       <li key={section.id}>
                         <a
                           href={`#${section.id}`}
-                          className="text-stone-600 hover:text-amber-600 transition-colors flex items-center gap-2"
+                          className="text-stone-600 hover:text-brand transition-colors flex items-center gap-2"
                         >
-                          <span className="text-amber-600 font-medium">{index + 1}.</span>
+                          <span className="text-brand font-medium">{index + 1}.</span>
                           {section.heading}
                         </a>
                       </li>
@@ -176,14 +176,14 @@ const BlogPost = () => {
 
               {/* Related Links */}
               {post.content.relatedLinks && post.content.relatedLinks.length > 0 && (
-                <div className="bg-amber-50 rounded-xl p-6 border border-amber-200 mt-10">
+                <div className="bg-brand-soft rounded-xl p-6 border border-brand-muted mt-10">
                   <h3 className="text-lg font-bold text-stone-900 mb-4">Related Resources</h3>
                   <div className="flex flex-wrap gap-3">
                     {post.content.relatedLinks.map((link, index) => (
                       <Link
                         key={index}
                         to={link.url}
-                        className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-amber-700 font-medium hover:bg-amber-100 transition-colors border border-amber-200"
+                        className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-brand-dark font-medium hover:bg-brand-soft transition-colors border border-brand-muted"
                       >
                         {link.text}
                         <ArrowRight className="w-4 h-4" />
@@ -250,7 +250,7 @@ const BlogPost = () => {
                     Our designers can help you plan your home interior project with personalized guidance.
                   </p>
                   <Link to="/contact">
-                    <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">
+                    <Button className="w-full bg-brand hover:bg-brand-dark text-white">
                       <Phone className="w-4 h-4 mr-2" />
                       Free Consultation
                     </Button>
@@ -276,7 +276,7 @@ const BlogPost = () => {
                             />
                           </div>
                           <div className="flex-1">
-                            <h4 className="text-sm font-semibold text-stone-900 group-hover:text-amber-600 transition-colors line-clamp-2">
+                            <h4 className="text-sm font-semibold text-stone-900 group-hover:text-brand transition-colors line-clamp-2">
                               {relatedPost.title}
                             </h4>
                             <span className="text-xs text-stone-500">
@@ -295,7 +295,7 @@ const BlogPost = () => {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16 bg-gradient-to-br from-amber-50 to-stone-100">
+      <section className="py-16 bg-gradient-to-br from-brand-soft to-stone-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-4">
             Ready to Start Your Project?
@@ -306,7 +306,7 @@ const BlogPost = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300"
+              className="inline-flex items-center justify-center bg-brand hover:bg-brand-dark text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300"
             >
               Get Free Consultation
               <ArrowRight className="w-5 h-5 ml-2" />
