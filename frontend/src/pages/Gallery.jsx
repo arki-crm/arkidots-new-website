@@ -19,7 +19,7 @@ const Gallery = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-stone-900 mb-6 leading-tight">
             Our Works
@@ -58,14 +58,14 @@ const Gallery = () => {
                   </div>
                   
                   <CardContent className="p-6">
-                    <h2 className="text-xl font-bold text-stone-900 mb-2 group-hover:text-amber-600 transition-colors">
+                    <h2 className="text-xl font-bold text-stone-900 mb-2 group-hover:text-brand transition-colors">
                       {project.name}
                     </h2>
                     <div className="flex items-center gap-2 text-stone-600 mb-4">
                       <MapPin className="w-4 h-4" />
                       <span className="text-sm">{project.location}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-amber-600 font-semibold text-sm group-hover:gap-3 transition-all">
+                    <div className="flex items-center gap-2 text-brand font-semibold text-sm group-hover:gap-3 transition-all">
                       <span>View Project</span>
                       <ArrowRight className="w-4 h-4" />
                     </div>
@@ -88,7 +88,7 @@ const Gallery = () => {
           </p>
           <Link 
             to="/contact"
-            className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+            className="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
           >
             Get Free Consultation
             <ArrowRight className="w-5 h-5" />
