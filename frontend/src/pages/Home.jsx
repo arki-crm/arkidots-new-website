@@ -414,7 +414,7 @@ const Home = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* 10-Year Warranty */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-brand-soft hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
+              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-brand-soft hover:border-brand-muted transition-all duration-300 hover:shadow-xl">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4">
                     <Shield className="w-8 h-8" />
@@ -427,7 +427,7 @@ const Home = () => {
               </div>
 
               {/* Lifetime Free Service */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-brand-soft hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
+              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-brand-soft hover:border-brand-muted transition-all duration-300 hover:shadow-xl">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4">
                     <CheckCircle2 className="w-8 h-8" />
@@ -440,7 +440,7 @@ const Home = () => {
               </div>
 
               {/* 30-Day Delivery */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-brand-soft hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
+              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-brand-soft hover:border-brand-muted transition-all duration-300 hover:shadow-xl">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4">
                     <Clock className="w-8 h-8" />
