@@ -44,6 +44,8 @@ function App() {
             <Route path="/warranty-policy" element={<WarrantyPolicy />} />
             <Route path="/design-ideas" element={<DesignIdeas />} />
             <Route path="/design-ideas/:slug" element={<DesignCategory />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </main>
         <Footer />
