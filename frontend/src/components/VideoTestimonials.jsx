@@ -40,7 +40,7 @@ const VideoTestimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+          <span className="inline-block bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-semibold mb-4">
             Customer Stories
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
