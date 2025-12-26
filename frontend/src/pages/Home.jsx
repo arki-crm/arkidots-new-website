@@ -47,7 +47,7 @@ const Home = () => {
       description: 'Transform your existing space with our expert renovation and remodeling services.',
       image: 'https://images.pexels.com/photos/159045/the-interior-of-the-repair-interior-design-159045.jpeg',
       icon: <Hammer className="w-6 h-6" />,
-      link: '/'
+      link: '/home-renovation'
     },
     {
       title: 'Custom Furniture',
