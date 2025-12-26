@@ -40,6 +40,8 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="/warranty-policy" element={<WarrantyPolicy />} />
+            <Route path="/design-ideas" element={<DesignIdeas />} />
+            <Route path="/design-ideas/:slug" element={<DesignCategory />} />
           </Routes>
         </main>
         <Footer />
