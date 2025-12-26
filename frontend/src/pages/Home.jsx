@@ -32,25 +32,29 @@ const Home = () => {
       title: 'Modular Kitchen',
       description: 'Custom-designed modular kitchens with premium fittings and smart storage solutions.',
       image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg',
-      icon: <Sparkles className="w-6 h-6" />
+      icon: <Sparkles className="w-6 h-6" />,
+      link: '/modular-kitchen'
     },
     {
       title: 'Full Home Interiors',
       description: 'Complete home interior solutions from concept to execution with personalized design.',
       image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzY2NzQ1ODU4fDA&ixlib=rb-4.1.0&q=85',
-      icon: <HomeIcon className="w-6 h-6" />
+      icon: <HomeIcon className="w-6 h-6" />,
+      link: '/'
     },
     {
       title: 'Home Renovation',
       description: 'Transform your existing space with our expert renovation and remodeling services.',
       image: 'https://images.pexels.com/photos/159045/the-interior-of-the-repair-interior-design-159045.jpeg',
-      icon: <Hammer className="w-6 h-6" />
+      icon: <Hammer className="w-6 h-6" />,
+      link: '/'
     },
     {
       title: 'Custom Furniture',
       description: 'Bespoke furniture pieces crafted to perfectly fit your space and style preferences.',
       image: 'https://images.pexels.com/photos/245208/pexels-photo-245208.jpeg',
-      icon: <Sofa className="w-6 h-6" />
+      icon: <Sofa className="w-6 h-6" />,
+      link: '/'
     }
   ];
 
