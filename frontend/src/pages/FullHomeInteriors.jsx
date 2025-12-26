@@ -242,9 +242,14 @@ const FullHomeInteriors = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Full Home Interior Designers in Kerala | Arki Dots - 1BHK, 2BHK, 3BHK Interior Solutions</title>
-        <meta name="description" content="Transform your Kerala home with Arki Dots. Complete interior design for 1BHK, 2BHK, 3BHK apartments and villas. Transparent pricing, 5-year warranty. Free consultation." />
-        <meta name="keywords" content="full home interiors Kerala, 2BHK interior design, 3BHK interior designers Kochi, home interior Trivandrum, apartment interior design Kerala" />
+        <title>Full Home Interior Designers in Kerala | Arki Dots - Complete Home Solutions</title>
+        <meta name="description" content="Transform your Kerala home with Arki Dots. Complete interior design for apartments and villas. Based in Vatakara, serving Kozhikode, Kannur & all Kerala. 10-year warranty. Free consultation." />
+        <meta name="keywords" content="full home interiors Kerala, home interior design Vatakara, interior designers Kozhikode, home interior Kannur, apartment interior design Kerala" />
+        <meta property="og:title" content="Full Home Interior Designers in Kerala | Arki Dots" />
+        <meta property="og:description" content="Complete home interior solutions by Arki Dots. Living rooms, bedrooms, kitchens with 10-year warranty." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://arkidots.com/full-home-interiors" />
       </Helmet>
 
       {/* Breadcrumb */}
