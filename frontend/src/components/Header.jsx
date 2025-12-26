@@ -6,11 +6,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
+    { name: 'Home', href: '#home', link: '/' },
     { name: 'Services', href: '#services' },
     { name: 'Process', href: '#process' },
     { name: 'FAQ', href: '#faq' },
-    { name: 'Contact', href: '#contact-form' }
+    { name: 'Contact', href: '#contact', link: '/contact' }
   ];
 
   const scrollToSection = (href) => {
