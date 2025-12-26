@@ -9,24 +9,24 @@ const VideoTestimonials = () => {
   const openModal = (testimonial) => {
     setSelectedVideo(testimonial);
     setIsModalOpen(true);
-    // Prevent body scroll when modal is open
-    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedVideo(null);
-    document.body.style.overflow = 'unset';
   };
 
-  // Close modal on escape key
+  // Handle body scroll and escape key
   useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === 'Escape') closeModal();
     };
     
     if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
       window.addEventListener('keydown', handleEscape);
+    } else {
+      document.body.style.overflow = 'unset';
     }
     
     return () => {
