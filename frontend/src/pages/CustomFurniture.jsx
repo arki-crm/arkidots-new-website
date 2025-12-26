@@ -198,7 +198,7 @@ const CustomFurniture = () => {
       <section className="bg-stone-50 py-4 border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-sm text-stone-600">
-            <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
+            <Link to="/" className="hover:text-brand transition-colors">Home</Link>
             <span>/</span>
             <span className="text-stone-900 font-medium">Custom Furniture</span>
           </div>
@@ -206,11 +206,11 @@ const CustomFurniture = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Palette className="w-4 h-4" />
                 <span>Crafted for You, Designed by Experts</span>
               </div>
@@ -223,7 +223,7 @@ const CustomFurniture = () => {
               <div className="flex flex-wrap gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Schedule Design Consultation
@@ -238,7 +238,7 @@ const CustomFurniture = () => {
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
-                <div className="text-3xl font-bold text-amber-600">Bespoke</div>
+                <div className="text-3xl font-bold text-brand">Bespoke</div>
                 <div className="text-sm text-stone-600">Every Piece Unique</div>
               </div>
             </div>
@@ -275,7 +275,7 @@ const CustomFurniture = () => {
             {furnitureTypes.map((type, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-brand-soft text-brand rounded-full flex items-center justify-center mb-4">
                     {type.icon}
                   </div>
                   <CardTitle className="text-xl text-stone-900">{type.title}</CardTitle>
@@ -285,7 +285,7 @@ const CustomFurniture = () => {
                   <ul className="space-y-2">
                     {type.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-sm text-stone-600">
-                        <CheckCircle2 className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-4 h-4 text-brand flex-shrink-0 mt-0.5" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -316,7 +316,7 @@ const CustomFurniture = () => {
                   <div className="space-y-2">
                     {material.characteristics.map((char, idx) => (
                       <div key={idx} className="flex items-start gap-2 text-stone-700">
-                        <Ruler className="w-4 h-4 text-amber-600 flex-shrink-0 mt-1" />
+                        <Ruler className="w-4 h-4 text-brand flex-shrink-0 mt-1" />
                         <span className="text-sm">{char}</span>
                       </div>
                     ))}
@@ -343,7 +343,7 @@ const CustomFurniture = () => {
                   <CardContent className="p-8">
                     <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
                       <div className="text-center lg:text-left">
-                        <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 text-amber-600 rounded-full mb-3">
+                        <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-soft text-brand rounded-full mb-3">
                           <span className="text-2xl font-bold">{phase.step}</span>
                         </div>
                         <p className="text-sm font-medium text-stone-600">{phase.duration}</p>
@@ -355,7 +355,7 @@ const CustomFurniture = () => {
                         
                         <div className="flex flex-wrap gap-2">
                           {phase.focus.map((item, idx) => (
-                            <span key={idx} className="inline-block bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm font-medium">
+                            <span key={idx} className="inline-block bg-brand-soft text-brand-dark px-3 py-1 rounded-full text-sm font-medium">
                               {item}
                             </span>
                           ))}
@@ -404,19 +404,19 @@ const CustomFurniture = () => {
       </section>
 
       {/* Integration with Interiors */}
-      <section className="py-20 bg-gradient-to-br from-amber-50 to-stone-50">
+      <section className="py-20 bg-gradient-to-br from-brand-soft to-stone-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-6">Part of Complete Interior Design</h2>
           <p className="text-lg text-stone-600 mb-8 leading-relaxed">
             Custom furniture works best when integrated with overall interior design. At Arki Dots, we coordinate furniture design with room layouts, color palettes, and architectural elements to create cohesive, harmonious spaces.
           </p>
           <p className="text-lg text-stone-700 mb-8">
-            Many of our <Link to="/full-home-interiors" className="text-amber-600 hover:text-amber-700 font-semibold underline">full home interior projects</Link> include custom furniture as key elements. This integration ensures every piece - from built-in wardrobes to freestanding dining tables - contributes to a unified design vision.
+            Many of our <Link to="/full-home-interiors" className="text-brand hover:text-brand-dark font-semibold underline">full home interior projects</Link> include custom furniture as key elements. This integration ensures every piece - from built-in wardrobes to freestanding dining tables - contributes to a unified design vision.
           </p>
           <Button 
             size="lg"
             variant="outline" 
-            className="border-2 border-stone-300 hover:border-amber-600 text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
+            className="border-2 border-stone-300 hover:border-brand text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
             onClick={() => window.location.href = '/full-home-interiors'}
           >
             Explore Full Home Interiors
@@ -435,7 +435,7 @@ const CustomFurniture = () => {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="bg-stone-50 mb-4 rounded-lg px-6 border-0 shadow-sm">
-                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-amber-600 transition-colors">
+                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-brand transition-colors">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-stone-600 leading-relaxed">
@@ -448,7 +448,7 @@ const CustomFurniture = () => {
       </section>
 
       {/* CTA Contact Form */}
-      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-amber-50">
+      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Start Your Custom Furniture Project</h2>
@@ -466,7 +466,7 @@ const CustomFurniture = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                       placeholder="Enter your name"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                   
@@ -478,7 +478,7 @@ const CustomFurniture = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
                       placeholder="Enter your phone number"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                 </div>
@@ -491,7 +491,7 @@ const CustomFurniture = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     placeholder="Enter your email"
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
@@ -502,7 +502,7 @@ const CustomFurniture = () => {
                       value={formData.furnitureType}
                       onChange={(e) => setFormData({...formData, furnitureType: e.target.value})}
                       placeholder="e.g., Wardrobe, Dining Table"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                   
@@ -512,7 +512,7 @@ const CustomFurniture = () => {
                       value={formData.location}
                       onChange={(e) => setFormData({...formData, location: e.target.value})}
                       placeholder="e.g., Kochi, Trivandrum"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                 </div>
@@ -524,14 +524,14 @@ const CustomFurniture = () => {
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     placeholder="Describe the furniture you envision, space dimensions if known, style preferences, any inspiration images you have in mind, etc."
                     rows={4}
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-brand hover:bg-brand-dark text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Request Design Consultation
                 </Button>
