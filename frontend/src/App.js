@@ -11,6 +11,8 @@ import Contact from './pages/Contact';
 import HomeRenovation from './pages/HomeRenovation';
 import CustomFurniture from './pages/CustomFurniture';
 import AboutUs from './pages/AboutUs';
+import Gallery from './pages/Gallery';
+import ProjectDetail from './pages/ProjectDetail';
 import { Toaster } from './components/ui/sonner';
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
             <Route path="/home-renovation" element={<HomeRenovation />} />
             <Route path="/custom-furniture" element={<CustomFurniture />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/projects/:projectId" element={<ProjectDetail />} />
           </Routes>
         </main>
         <Footer />
