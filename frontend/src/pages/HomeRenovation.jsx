@@ -190,9 +190,14 @@ const HomeRenovation = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Home Renovation Services in Kerala | Arki Dots - Kitchen, Bathroom & Complete Home Remodeling</title>
-        <meta name="description" content="Professional home renovation services across Kerala. Kitchen remodeling, bathroom renovation, full home makeover. Transparent pricing. Free site inspection. Call now!" />
-        <meta name="keywords" content="home renovation Kerala, house renovation Kochi, kitchen renovation Kerala, bathroom remodeling, apartment renovation Kerala" />
+        <title>Home Renovation Services in Kerala | Arki Dots - Complete Remodeling</title>
+        <meta name="description" content="Professional home renovation by Arki Dots. Kitchen remodeling, bathroom renovation, full home makeover in Vatakara, Kozhikode, Kannur & Kerala. Free site inspection." />
+        <meta name="keywords" content="home renovation Kerala, house renovation Kozhikode, kitchen renovation Vatakara, bathroom remodeling Kannur, apartment renovation Kerala" />
+        <meta property="og:title" content="Home Renovation Services in Kerala | Arki Dots" />
+        <meta property="og:description" content="Professional home renovation services. Kitchen, bathroom, and complete home remodeling." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://arkidots.com/home-renovation" />
       </Helmet>
 
       {/* Breadcrumb */}
