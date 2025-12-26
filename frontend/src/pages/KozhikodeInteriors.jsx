@@ -155,9 +155,14 @@ const KozhikodeInteriors = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Interior Designers in Kozhikode | Arki Dots - Home Interior Design Kozhikode, Kerala</title>
-        <meta name="description" content="Leading interior designers in Kozhikode (Calicut), Kerala. Expert home & modular kitchen design services across Kozhikode. Free consultation. 5-year warranty. Call now!" />
-        <meta name="keywords" content="interior designers Kozhikode, interior designers Calicut, home interiors Kozhikode, modular kitchen Kozhikode, interior design Calicut Kerala" />
+        <title>Interior Designers in Kozhikode | Arki Dots - Best Home Interiors Calicut</title>
+        <meta name="description" content="Arki Dots - Leading interior designers in Kozhikode, Kerala. Expert modular kitchen & home interior design. Based in Vatakara, serving all of Kozhikode district. 10-year warranty." />
+        <meta name="keywords" content="interior designers Kozhikode, interior designers Calicut, home interiors Kozhikode, modular kitchen Kozhikode, Arki Dots Kozhikode, interior design Calicut Kerala" />
+        <meta property="og:title" content="Interior Designers in Kozhikode | Arki Dots" />
+        <meta property="og:description" content="Premium home interior design in Kozhikode. Modular kitchens, wardrobes, full home interiors." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://arkidots.com/interior-designers-kozhikode" />
         <meta name="geo.region" content="IN-KL" />
         <meta name="geo.placename" content="Kozhikode" />
         <meta name="geo.position" content="11.2588;75.7804" />
