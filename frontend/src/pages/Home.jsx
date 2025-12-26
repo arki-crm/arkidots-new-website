@@ -7,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
 import { useToast } from '../hooks/use-toast';
 import { Home as HomeIcon, Phone, Mail, MapPin, CheckCircle2, Users, Award, Clock, ArrowRight, Sparkles, Hammer, PaintBucket, Sofa, Shield, UserCheck, Pencil, PlayCircle, Package, Key } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import VideoTestimonials from '../components/VideoTestimonials';
 
 const Home = () => {
   const { toast } = useToast();
