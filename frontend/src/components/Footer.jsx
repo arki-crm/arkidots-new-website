@@ -40,10 +40,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-brand to-brand rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">AD</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={logoUrl} 
+                alt="Arki Dots Logo" 
+                className="h-10 w-10 object-contain"
+              />
               <span className="text-xl font-bold text-white">Arki Dots</span>
             </div>
             <p className="text-sm text-stone-400 leading-relaxed mb-3">
