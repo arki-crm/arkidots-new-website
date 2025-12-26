@@ -20,14 +20,14 @@ const DesignIdeas = () => {
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-amber-600/20 text-amber-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 bg-brand/20 text-brand-light px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Lightbulb className="w-4 h-4" />
             <span>Design Inspiration</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
             Design Ideas for Your
-            <span className="text-amber-400"> Dream Home</span>
+            <span className="text-brand-light"> Dream Home</span>
           </h1>
           
           <p className="text-lg sm:text-xl text-stone-300 max-w-3xl mx-auto mb-8">
@@ -76,7 +76,7 @@ const DesignIdeas = () => {
                     
                     {/* Category Title Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-brand-light transition-colors">
                         {category.title}
                       </h3>
                     </div>
@@ -88,7 +88,7 @@ const DesignIdeas = () => {
                       {category.description}
                     </p>
                     
-                    <div className="flex items-center text-amber-600 font-semibold group-hover:text-amber-700 transition-colors">
+                    <div className="flex items-center text-brand font-semibold group-hover:text-brand-dark transition-colors">
                       <span>View Ideas</span>
                       <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
                     </div>
@@ -101,9 +101,9 @@ const DesignIdeas = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-amber-50 to-stone-100">
+      <section className="py-20 bg-gradient-to-br from-brand-soft to-stone-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Palette className="w-4 h-4" />
             <span>Ready to Start?</span>
           </div>
@@ -120,7 +120,7 @@ const DesignIdeas = () => {
           <Link to="/contact">
             <Button 
               size="lg" 
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Talk to a Designer
               <ArrowRight className="ml-2 w-5 h-5" />
