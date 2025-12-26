@@ -109,7 +109,7 @@ const Home = () => {
     }
   ];
 
-  const locations = ['Kochi', 'Trivandrum', 'Kozhikode', 'Thrissur', 'Kannur', 'Kollam'];
+  const locations = ['Vatakara', 'Nadapuram', 'Kozhikode', 'Thalassery', 'Kannur', 'Koyilandy', 'Quilandy', 'Mahe'];
 
   const faqs = [
     {
