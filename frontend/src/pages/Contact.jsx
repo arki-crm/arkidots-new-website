@@ -63,9 +63,14 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-stone-50">
       <Helmet>
-        <title>Contact Us | Arki Dots - Interior Designers Kerala | Get Free Consultation</title>
-        <meta name="description" content="Contact Arki Dots for professional interior design services in Kerala. Get a free consultation for your home or office interior project. Call +91 98765 43210." />
-        <meta name="keywords" content="contact Arki Dots, interior designer contact Kerala, free consultation interior design" />
+        <title>Contact Arki Dots | Interior Designers in Vatakara, Kozhikode, Kerala</title>
+        <meta name="description" content="Contact Arki Dots for professional interior design in Kerala. Based in Vatakara, serving Kozhikode, Kannur & all Kerala. Free consultation. Call +91 98765 43210." />
+        <meta name="keywords" content="contact Arki Dots, interior designer Vatakara, Kozhikode interior design contact, free consultation Kerala" />
+        <meta property="og:title" content="Contact Arki Dots | Interior Designers Kerala" />
+        <meta property="og:description" content="Get free consultation for your home interior project in Kerala." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://arkidots.com/contact" />
         
         {/* Schema.org markup for LocalBusiness */}
         <script type="application/ld+json">
@@ -73,18 +78,16 @@ const Contact = () => {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Arki Dots",
-            "description": "Professional Interior Design Services in Kerala",
+            "description": "Premium Interior Design Services in Kerala",
             "telephone": "+91-98765-43210",
             "email": "info@arkidots.com",
             "address": {
               "@type": "PostalAddress",
+              "addressLocality": "Vatakara",
               "addressRegion": "Kerala",
               "addressCountry": "IN"
             },
-            "areaServed": {
-              "@type": "State",
-              "name": "Kerala"
-            },
+            "areaServed": ["Vatakara", "Kozhikode", "Kannur", "Thalassery", "Nadapuram", "Kerala"],
             "priceRange": "₹₹₹"
           })}
         </script>
