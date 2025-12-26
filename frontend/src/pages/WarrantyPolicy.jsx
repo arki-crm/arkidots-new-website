@@ -18,7 +18,7 @@ const WarrantyPolicy = () => {
       <section className="py-12 bg-gradient-to-br from-stone-50 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-600 text-white rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-brand text-white rounded-full mb-6">
               <Shield className="w-8 h-8" />
             </div>
             <h1 className="text-4xl font-bold text-stone-900 mb-4">Warranty & Service Policy</h1>
@@ -33,21 +33,21 @@ const WarrantyPolicy = () => {
           <div className="mb-12 bg-gradient-to-br from-amber-50 to-stone-50 rounded-2xl p-8 border-2 border-amber-200">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-stone-900 mb-2">10-Year Flat Warranty</h3>
                 <p className="text-stone-600">Comprehensive coverage on all modular products</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mx-auto mb-4">
                   <Wrench className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-stone-900 mb-2">Lifetime Free Service</h3>
                 <p className="text-stone-600">Support for all modular installations forever</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mx-auto mb-4">
                   <Clock className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-stone-900 mb-2">Quick Response</h3>
@@ -70,7 +70,7 @@ const WarrantyPolicy = () => {
                   <li>TV Units and Entertainment Centers</li>
                   <li>Study Tables and Workstations</li>
                 </ul>
-                <div className="mt-4 bg-amber-50 border-l-4 border-amber-600 p-4 rounded-r-lg">
+                <div className="mt-4 bg-amber-50 border-l-4 border-brand p-4 rounded-r-lg">
                   <p className="text-sm text-stone-700">
                     <strong>Note:</strong> Civil work, painting, false ceiling, and tiling are covered under a separate 1-year workmanship warranty.
                   </p>
@@ -79,7 +79,7 @@ const WarrantyPolicy = () => {
 
               <div>
                 <h2 className="text-2xl font-bold text-stone-900 mb-4 flex items-center gap-3">
-                  <Shield className="w-6 h-6 text-amber-600" />
+                  <Shield className="w-6 h-6 text-brand" />
                   10-Year Flat Warranty Coverage
                 </h2>
                 <p className="text-stone-700 leading-relaxed mb-4">
@@ -124,15 +124,15 @@ const WarrantyPolicy = () => {
                 </p>
                 <ul className="space-y-2 text-stone-700">
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span><strong>Hettich & Blum:</strong> 10-year manufacturer warranty on hinges, channels, and drawer systems</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span><strong>Handles & Accessories:</strong> 5-year warranty on handles, knobs, and accessories</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span><strong>Soft-Close Mechanisms:</strong> Covered under respective brand warranties</span>
                   </li>
                 </ul>
@@ -140,7 +140,7 @@ const WarrantyPolicy = () => {
 
               <div>
                 <h2 className="text-2xl font-bold text-stone-900 mb-4 flex items-center gap-3">
-                  <Wrench className="w-6 h-6 text-amber-600" />
+                  <Wrench className="w-6 h-6 text-brand" />
                   Lifetime Free Service
                 </h2>
                 <p className="text-stone-700 leading-relaxed mb-4">
@@ -260,23 +260,23 @@ const WarrantyPolicy = () => {
                 </p>
                 <ul className="space-y-2 text-stone-700">
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Clean surfaces with a soft, damp cloth; avoid harsh chemicals</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Do not overload drawers or shelves beyond recommended capacity</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Wipe up water spills immediately, especially near sinks</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Use drawer and shutter mechanisms gently; avoid slamming</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Ensure adequate ventilation in kitchens to reduce moisture buildup</span>
                   </li>
                 </ul>

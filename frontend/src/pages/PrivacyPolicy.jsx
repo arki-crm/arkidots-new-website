@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
       <section className="py-12 bg-gradient-to-br from-stone-50 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-600 text-white rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-brand text-white rounded-full mb-6">
               <Lock className="w-8 h-8" />
             </div>
             <h1 className="text-4xl font-bold text-stone-900 mb-4">Privacy Policy</h1>
@@ -33,7 +33,7 @@ const PrivacyPolicy = () => {
             <CardContent className="p-8 sm:p-12 space-y-8">
               <div>
                 <h2 className="text-2xl font-bold text-stone-900 mb-4 flex items-center gap-3">
-                  <Shield className="w-6 h-6 text-amber-600" />
+                  <Shield className="w-6 h-6 text-brand" />
                   Our Commitment to Privacy
                 </h2>
                 <p className="text-stone-700 leading-relaxed">
@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
 
               <div>
                 <h2 className="text-2xl font-bold text-stone-900 mb-4 flex items-center gap-3">
-                  <Eye className="w-6 h-6 text-amber-600" />
+                  <Eye className="w-6 h-6 text-brand" />
                   Information We Collect
                 </h2>
                 <div className="space-y-4 text-stone-700">
@@ -72,19 +72,19 @@ const PrivacyPolicy = () => {
                 <h2 className="text-2xl font-bold text-stone-900 mb-4">How We Use Your Information</h2>
                 <ul className="space-y-3 text-stone-700">
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span><strong>Project Consultation:</strong> To understand your requirements and provide design solutions</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span><strong>Communication:</strong> To contact you regarding your project, quotations, and progress updates</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span><strong>Service Delivery:</strong> To execute your interior design project and coordinate installations</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span><strong>Post-Project Support:</strong> To provide warranty service and address any concerns</span>
                   </li>
                 </ul>
@@ -97,15 +97,15 @@ const PrivacyPolicy = () => {
                 </p>
                 <ul className="space-y-2 text-stone-700">
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>With contractors and suppliers necessary for project execution (only project-relevant details)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>When required by law or legal process</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>With your explicit consent</span>
                   </li>
                 </ul>
@@ -123,19 +123,19 @@ const PrivacyPolicy = () => {
                 <p className="text-stone-700 leading-relaxed mb-4">You have the right to:</p>
                 <ul className="space-y-2 text-stone-700">
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Access your personal information we hold</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Request correction of inaccurate information</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Request deletion of your data (subject to legal and contractual obligations)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Opt-out of marketing communications</span>
                   </li>
                 </ul>
@@ -150,7 +150,7 @@ const PrivacyPolicy = () => {
 
               <div>
                 <h2 className="text-2xl font-bold text-stone-900 mb-4 flex items-center gap-3">
-                  <UserCheck className="w-6 h-6 text-amber-600" />
+                  <UserCheck className="w-6 h-6 text-brand" />
                   Contact Us
                 </h2>
                 <p className="text-stone-700 leading-relaxed">
@@ -162,7 +162,7 @@ const PrivacyPolicy = () => {
                 </div>
               </div>
 
-              <div className="bg-amber-50 border-l-4 border-amber-600 p-6 rounded-r-lg">
+              <div className="bg-amber-50 border-l-4 border-brand p-6 rounded-r-lg">
                 <p className="text-sm text-stone-700 leading-relaxed">
                   <strong>Note:</strong> This Privacy Policy may be updated periodically to reflect changes in our practices or legal requirements. We encourage you to review this page regularly for the latest information.
                 </p>

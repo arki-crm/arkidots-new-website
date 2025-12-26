@@ -18,7 +18,7 @@ const TermsConditions = () => {
       <section className="py-12 bg-gradient-to-br from-stone-50 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-600 text-white rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-brand text-white rounded-full mb-6">
               <FileText className="w-8 h-8" />
             </div>
             <h1 className="text-4xl font-bold text-stone-900 mb-4">Terms & Conditions</h1>
@@ -63,19 +63,19 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-bold text-stone-900 mb-4">3. Quotation and Pricing</h2>
                 <ul className="space-y-3 text-stone-700">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                     <span>Quotations are valid for 30 days from the date of issue</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                     <span>Prices are subject to change if material costs increase significantly or if project scope changes</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                     <span>Any changes to the agreed scope of work will be communicated and approved before execution</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                     <span>All prices include applicable GST unless otherwise stated</span>
                   </li>
                 </ul>
@@ -102,19 +102,19 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-bold text-stone-900 mb-4">5. Project Timeline</h2>
                 <ul className="space-y-3 text-stone-700">
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Project timelines are estimates based on standard conditions and will be specified in your work order</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Delays may occur due to unforeseen circumstances, material availability, or client-requested changes</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>We commit to informing you promptly of any potential delays and revised timelines</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">•</span>
+                    <span className="text-brand mt-1">•</span>
                     <span>Force majeure events (natural disasters, strikes, etc.) may affect timelines</span>
                   </li>
                 </ul>
@@ -124,23 +124,23 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-bold text-stone-900 mb-4">6. Client Responsibilities</h2>
                 <ul className="space-y-3 text-stone-700">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                     <span>Provide accurate site information and access during working hours</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                     <span>Obtain necessary approvals from housing societies or local authorities</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                     <span>Clear and protect existing furniture and belongings in work areas</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                     <span>Make timely decisions on materials, colors, and design elements</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                     <span>Ensure timely payment as per agreed schedule</span>
                   </li>
                 </ul>
@@ -201,9 +201,9 @@ const TermsConditions = () => {
                 </p>
               </div>
 
-              <div className="bg-amber-50 border-l-4 border-amber-600 p-6 rounded-r-lg">
+              <div className="bg-amber-50 border-l-4 border-brand p-6 rounded-r-lg">
                 <div className="flex items-start gap-3">
-                  <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <AlertCircle className="w-6 h-6 text-brand flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-stone-700 leading-relaxed">
                       <strong>Contact Us:</strong> For questions about these Terms and Conditions, please contact us at info@arkidots.com or +91 98765 43210.
