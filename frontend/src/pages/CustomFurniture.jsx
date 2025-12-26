@@ -189,9 +189,14 @@ const CustomFurniture = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Custom Furniture Designers in Kerala | Arki Dots - Bespoke Furniture Design & Manufacturing</title>
-        <meta name="description" content="Premium custom furniture design in Kerala. Bespoke wardrobes, beds, dining tables crafted for your space. Quality craftsmanship, personalized design. Consultation available." />
-        <meta name="keywords" content="custom furniture Kerala, bespoke furniture, custom wardrobe Kerala, furniture designers Kerala, custom made furniture" />
+        <title>Custom Furniture Designers in Kerala | Arki Dots - Bespoke Furniture</title>
+        <meta name="description" content="Premium custom furniture by Arki Dots. Bespoke wardrobes, beds, dining tables crafted in Vatakara. Serving Kozhikode, Kannur & all Kerala with quality craftsmanship." />
+        <meta name="keywords" content="custom furniture Kerala, bespoke furniture Kozhikode, custom wardrobe Vatakara, furniture designers Kannur, custom made furniture Kerala" />
+        <meta property="og:title" content="Custom Furniture Designers in Kerala | Arki Dots" />
+        <meta property="og:description" content="Bespoke furniture design and manufacturing. Custom wardrobes, beds, dining tables." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://arkidots.com/custom-furniture" />
       </Helmet>
 
       {/* Breadcrumb */}
