@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ModularKitchen from './pages/ModularKitchen';
 import FullHomeInteriors from './pages/FullHomeInteriors';
+import KozhikodeInteriors from './pages/KozhikodeInteriors';
 import { Toaster } from './components/ui/sonner';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/modular-kitchen" element={<ModularKitchen />} />
             <Route path="/full-home-interiors" element={<FullHomeInteriors />} />
+            <Route path="/interior-designers-kozhikode" element={<KozhikodeInteriors />} />
           </Routes>
         </main>
         <Footer />
