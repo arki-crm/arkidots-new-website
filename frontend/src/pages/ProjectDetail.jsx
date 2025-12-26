@@ -19,7 +19,7 @@ const ProjectDetail = () => {
       <div className="min-h-screen bg-stone-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-stone-900 mb-4">Project Not Found</h1>
-          <Link to="/gallery" className="text-amber-600 hover:text-amber-700 font-semibold">
+          <Link to="/gallery" className="text-brand hover:text-brand-dark font-semibold">
             ← Back to Gallery
           </Link>
         </div>
@@ -48,7 +48,7 @@ const ProjectDetail = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <button
             onClick={() => navigate('/gallery')}
-            className="flex items-center gap-2 text-stone-600 hover:text-amber-600 transition-colors font-medium"
+            className="flex items-center gap-2 text-stone-600 hover:text-brand transition-colors font-medium"
           >
             <ArrowLeft className="w-5 h-5" />
             <span>Back to Gallery</span>
@@ -57,11 +57,11 @@ const ProjectDetail = () => {
       </section>
 
       {/* Project Header */}
-      <section className="py-12 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="py-12 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <div className="flex flex-wrap items-center gap-4 mb-4">
-              <span className="bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold">
+              <span className="bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-semibold">
                 {project.type}
               </span>
               {project.size && (
@@ -76,7 +76,7 @@ const ProjectDetail = () => {
             </h1>
             
             <div className="flex items-center gap-2 text-stone-600 mb-6">
-              <MapPin className="w-5 h-5 text-amber-600" />
+              <MapPin className="w-5 h-5 text-brand" />
               <span className="text-lg">{project.location}</span>
             </div>
             
@@ -104,7 +104,7 @@ const ProjectDetail = () => {
                 <div key={sectionName} className="space-y-6">
                   {/* Section Label - Optional visual grouping */}
                   <div className="flex items-center gap-3">
-                    <div className="h-px bg-amber-600 w-12"></div>
+                    <div className="h-px bg-brand w-12"></div>
                     <h2 className="text-xl font-semibold text-stone-900">{sectionName}</h2>
                     <div className="h-px bg-stone-200 flex-1"></div>
                   </div>
@@ -145,7 +145,7 @@ const ProjectDetail = () => {
             <Link to="/contact">
               <Button 
                 size="lg" 
-                className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 Start Your Project
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -155,7 +155,7 @@ const ProjectDetail = () => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-2 border-stone-300 hover:border-amber-600 text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
+                className="border-2 border-stone-300 hover:border-brand text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
               >
                 View More Projects
               </Button>
