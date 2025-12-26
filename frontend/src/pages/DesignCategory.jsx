@@ -1,9 +1,29 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { ArrowLeft, X, ChevronLeft, ChevronRight, Lightbulb, Phone } from 'lucide-react';
+import { ArrowLeft, X, ChevronLeft, ChevronRight, Lightbulb, Phone, Palette, Layers, Settings, Gem, Tv, Layout, Armchair, LightbulbIcon, BedDouble, Square, Grid3X3, Sun, DoorOpen, Archive, Shield, CheckCircle2, Info } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { getCategoryBySlug, getIdeasByCategoryId, designCategories } from '../data/designIdeas';
+
+// Icon mapping for highlight features
+const iconMap = {
+  palette: Palette,
+  layers: Layers,
+  settings: Settings,
+  gem: Gem,
+  tv: Tv,
+  layout: Layout,
+  sofa: Armchair,
+  lightbulb: LightbulbIcon,
+  bed: BedDouble,
+  square: Square,
+  grid: Grid3X3,
+  sun: Sun,
+  door: DoorOpen,
+  archive: Archive,
+  shield: Shield,
+  check: CheckCircle2
+};
 
 const DesignCategory = () => {
   const { slug } = useParams();
