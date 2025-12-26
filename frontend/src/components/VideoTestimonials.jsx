@@ -75,7 +75,7 @@ const VideoTestimonials = () => {
                   
                   {/* Play Button Overlay */}
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-amber-600 rounded-full flex items-center justify-center shadow-xl group-hover:bg-amber-500 group-hover:scale-110 transition-all duration-300">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-brand rounded-full flex items-center justify-center shadow-xl group-hover:bg-brand group-hover:scale-110 transition-all duration-300">
                       <Play className="w-7 h-7 sm:w-8 sm:h-8 text-white ml-1" fill="white" />
                     </div>
                   </div>
@@ -83,16 +83,16 @@ const VideoTestimonials = () => {
 
                 {/* Customer Info */}
                 <div className="p-4 sm:p-5">
-                  <h3 className="text-lg font-semibold text-stone-900 mb-2 group-hover:text-amber-600 transition-colors">
+                  <h3 className="text-lg font-semibold text-stone-900 mb-2 group-hover:text-brand transition-colors">
                     {testimonial.customerName}
                   </h3>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-stone-600">
                     <div className="flex items-center gap-1.5">
-                      <HomeIcon className="w-4 h-4 text-amber-600 flex-shrink-0" />
+                      <HomeIcon className="w-4 h-4 text-brand flex-shrink-0" />
                       <span>{testimonial.projectType}</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <MapPin className="w-4 h-4 text-amber-600 flex-shrink-0" />
+                      <MapPin className="w-4 h-4 text-brand flex-shrink-0" />
                       <span>{testimonial.location}</span>
                     </div>
                   </div>
@@ -120,7 +120,7 @@ const VideoTestimonials = () => {
             {/* Close Button */}
             <button
               onClick={closeModal}
-              className="absolute -top-12 right-0 sm:right-0 sm:-top-14 text-white hover:text-amber-400 transition-colors p-2"
+              className="absolute -top-12 right-0 sm:right-0 sm:-top-14 text-white hover:text-brand-light transition-colors p-2"
               aria-label="Close video"
             >
               <X className="w-8 h-8" />
