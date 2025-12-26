@@ -184,7 +184,7 @@ const AboutUs = () => {
                   <p className="text-stone-600 leading-relaxed">{phase.description}</p>
                 </CardContent>
                 {index < workingProcess.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 left-full w-8 h-0.5 bg-amber-200 -translate-y-1/2"></div>
+                  <div className="hidden lg:block absolute top-1/2 left-full w-8 h-0.5 bg-brand-muted -translate-y-1/2"></div>
                 )}
               </Card>
             ))}
