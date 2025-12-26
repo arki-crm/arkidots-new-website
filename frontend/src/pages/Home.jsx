@@ -6,6 +6,7 @@ import { Textarea } from '../components/ui/textarea';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { useToast } from '../hooks/use-toast';
 import { Home as HomeIcon, Phone, Mail, MapPin, CheckCircle2, Users, Award, Clock, ArrowRight, Sparkles, Hammer, PaintBucket, Sofa } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const { toast } = useToast();
