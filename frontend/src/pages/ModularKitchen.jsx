@@ -195,7 +195,7 @@ const ModularKitchen = () => {
       <section className="bg-stone-50 py-4 border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-sm text-stone-600">
-            <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
+            <Link to="/" className="hover:text-brand transition-colors">Home</Link>
             <span>/</span>
             <span className="text-stone-900 font-medium">Modular Kitchen</span>
           </div>
@@ -203,11 +203,11 @@ const ModularKitchen = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <ChefHat className="w-4 h-4" />
                 <span>Kerala's Trusted Modular Kitchen Experts</span>
               </div>
@@ -220,7 +220,7 @@ const ModularKitchen = () => {
               <div className="flex flex-wrap gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Get Free Design Consultation
@@ -229,7 +229,7 @@ const ModularKitchen = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-stone-300 hover:border-amber-600 text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
+                  className="border-2 border-stone-300 hover:border-brand text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
                   onClick={() => document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })}
                 >
                   View Pricing
@@ -243,7 +243,7 @@ const ModularKitchen = () => {
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
-                <div className="text-3xl font-bold text-amber-600">₹1.2L+</div>
+                <div className="text-3xl font-bold text-brand">₹1.2L+</div>
                 <div className="text-sm text-stone-600">Starting Price</div>
               </div>
             </div>
@@ -292,7 +292,7 @@ const ModularKitchen = () => {
                   <ul className="space-y-2">
                     {type.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-stone-700">
-                        <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0" />
+                        <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -315,13 +315,13 @@ const ModularKitchen = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {materials.map((material, index) => (
               <div key={index} className="text-center group">
-                <div className="bg-amber-50 rounded-2xl p-8 mb-4 group-hover:bg-amber-100 transition-colors duration-300">
+                <div className="bg-brand-soft rounded-2xl p-8 mb-4 group-hover:bg-brand-soft transition-colors duration-300">
                   <h3 className="text-xl font-semibold text-stone-900 mb-3">{material.title}</h3>
                   <p className="text-sm text-stone-600 mb-4">{material.description}</p>
                   <ul className="space-y-2">
                     {material.benefits.map((benefit, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-sm text-stone-700 justify-center">
-                        <CheckCircle2 className="w-4 h-4 text-amber-600 flex-shrink-0" />
+                        <CheckCircle2 className="w-4 h-4 text-brand flex-shrink-0" />
                         <span>{benefit}</span>
                       </li>
                     ))}
@@ -343,10 +343,10 @@ const ModularKitchen = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {priceRanges.map((range, index) => (
-              <Card key={index} className="border-2 hover:border-amber-600 transition-all duration-300 hover:shadow-xl">
+              <Card key={index} className="border-2 hover:border-brand transition-all duration-300 hover:shadow-xl">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl text-stone-900 mb-2">{range.type}</CardTitle>
-                  <div className="text-3xl font-bold text-amber-600">{range.priceRange}</div>
+                  <div className="text-3xl font-bold text-brand">{range.priceRange}</div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-stone-600 leading-relaxed">{range.includes}</p>
@@ -355,7 +355,7 @@ const ModularKitchen = () => {
             ))}
           </div>
           
-          <div className="mt-12 bg-amber-50 border-l-4 border-amber-600 p-6 rounded-r-lg">
+          <div className="mt-12 bg-brand-soft border-l-4 border-brand p-6 rounded-r-lg">
             <p className="text-stone-700">
               <strong>Note:</strong> Prices are approximate and vary based on kitchen size, material choice, accessories, and appliances. We provide detailed quotations after site measurement and design discussion. All prices include design, manufacturing, delivery, and installation.
             </p>
@@ -374,8 +374,8 @@ const ModularKitchen = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="relative">
-                <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <span className="text-2xl font-bold text-amber-600">{step.step}</span>
+                <div className="bg-brand-soft w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <span className="text-2xl font-bold text-brand">{step.step}</span>
                 </div>
                 <div className="text-center">
                   <h3 className="text-xl font-semibold text-stone-900 mb-2">{step.title}</h3>
@@ -392,7 +392,7 @@ const ModularKitchen = () => {
       </section>
 
       {/* Why Choose */}
-      <section className="py-20 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="py-20 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Why Choose Arki Dots for Your Modular Kitchen</h2>
@@ -402,7 +402,7 @@ const ModularKitchen = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyChoose.map((item, index) => (
               <div key={index} className="text-center group hover:scale-105 transition-transform duration-300">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-white text-amber-600 rounded-full mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-300 shadow-lg">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white text-brand rounded-full mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-300 shadow-lg">
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900 mb-2">{item.title}</h3>
@@ -424,7 +424,7 @@ const ModularKitchen = () => {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="bg-stone-50 mb-4 rounded-lg px-6 border-0 shadow-sm">
-                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-amber-600 transition-colors">
+                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-brand transition-colors">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-stone-600 leading-relaxed">
@@ -448,7 +448,7 @@ const ModularKitchen = () => {
             <Link to="/" className="group">
               <Card className="hover:shadow-xl transition-all duration-300 border-0">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                  <div className="w-12 h-12 bg-brand-soft text-brand rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand group-hover:text-white transition-colors">
                     <HomeIcon className="w-6 h-6" />
                   </div>
                   <CardTitle className="text-xl">Full Home Interiors</CardTitle>
@@ -460,7 +460,7 @@ const ModularKitchen = () => {
             <Link to="/" className="group">
               <Card className="hover:shadow-xl transition-all duration-300 border-0">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                  <div className="w-12 h-12 bg-brand-soft text-brand rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand group-hover:text-white transition-colors">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                     </svg>
@@ -474,7 +474,7 @@ const ModularKitchen = () => {
             <Link to="/" className="group">
               <Card className="hover:shadow-xl transition-all duration-300 border-0">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                  <div className="w-12 h-12 bg-brand-soft text-brand rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand group-hover:text-white transition-colors">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
@@ -489,7 +489,7 @@ const ModularKitchen = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-amber-50">
+      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Get Your Free Kitchen Design Consultation</h2>
@@ -507,7 +507,7 @@ const ModularKitchen = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                       placeholder="Enter your name"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                   
@@ -519,7 +519,7 @@ const ModularKitchen = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
                       placeholder="Enter your phone number"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                 </div>
@@ -532,7 +532,7 @@ const ModularKitchen = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     placeholder="Enter your email"
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
@@ -543,7 +543,7 @@ const ModularKitchen = () => {
                       value={formData.location}
                       onChange={(e) => setFormData({...formData, location: e.target.value})}
                       placeholder="e.g., Kochi, Trivandrum"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                   
@@ -553,7 +553,7 @@ const ModularKitchen = () => {
                       value={formData.kitchenSize}
                       onChange={(e) => setFormData({...formData, kitchenSize: e.target.value})}
                       placeholder="e.g., 100 sq ft"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                 </div>
@@ -565,14 +565,14 @@ const ModularKitchen = () => {
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     placeholder="Tell us about your kitchen requirements, preferred layout, budget range, etc."
                     rows={4}
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-brand hover:bg-brand-dark text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Submit Request
                 </Button>
