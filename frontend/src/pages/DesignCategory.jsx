@@ -33,42 +33,47 @@ const DesignCategory = () => {
   // Find category by slug
   const category = getCategoryBySlug(slug);
   const ideas = category ? getIdeasByCategoryId(category.id) : [];
+  const ideasLength = ideas.length;
 
   const openLightbox = (idea, index) => {
     setSelectedImage(idea);
     setCurrentIndex(index);
   };
 
-  const closeLightbox = useCallback(() => {
+  const closeLightbox = () => {
     setSelectedImage(null);
-  }, []);
+  };
 
-  const goToPrevious = useCallback(() => {
-    if (ideas.length === 0) return;
-    const newIndex = currentIndex === 0 ? ideas.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-    setSelectedImage(ideas[newIndex]);
-  }, [currentIndex, ideas]);
+  const goToPrevious = () => {
+    if (ideasLength === 0) return;
+    setCurrentIndex(prev => {
+      const newIndex = prev === 0 ? ideasLength - 1 : prev - 1;
+      setSelectedImage(ideas[newIndex]);
+      return newIndex;
+    });
+  };
 
-  const goToNext = useCallback(() => {
-    if (ideas.length === 0) return;
-    const newIndex = currentIndex === ideas.length - 1 ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-    setSelectedImage(ideas[newIndex]);
-  }, [currentIndex, ideas]);
+  const goToNext = () => {
+    if (ideasLength === 0) return;
+    setCurrentIndex(prev => {
+      const newIndex = prev === ideasLength - 1 ? 0 : prev + 1;
+      setSelectedImage(ideas[newIndex]);
+      return newIndex;
+    });
+  };
 
   // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (!selectedImage) return;
-      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'Escape') setSelectedImage(null);
       if (e.key === 'ArrowLeft') goToPrevious();
       if (e.key === 'ArrowRight') goToNext();
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedImage, closeLightbox, goToPrevious, goToNext]);
+  });
 
   // Prevent body scroll when lightbox is open
   useEffect(() => {
