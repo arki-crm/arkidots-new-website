@@ -153,20 +153,35 @@ const Home = () => {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <MapPin className="w-4 h-4" />
+              <span>Based in Vatakara | Serving All of Kerala</span>
+            </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Best Home Interior Designers in Kerala
+              Premium Interior Designers in Kozhikode & North Kerala
             </h1>
             <p className="text-lg sm:text-xl text-stone-200 mb-8 leading-relaxed">
-              Transform your home into a masterpiece with Arki Dots. We specialize in custom interior design, modular kitchens, and complete home renovations across Kerala.
+              Arki Dots transforms homes across Vatakara, Nadapuram, Kozhikode, Thalassery, and Kannur with stunning modular kitchens, wardrobes, and complete home interiors. Experience quality craftsmanship trusted by Kerala families.
             </p>
-            <Button 
-              size="lg" 
-              className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
-            >
-              Get Free Consultation
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button 
+                size="lg" 
+                className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
+              >
+                Get Free Consultation
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+              <Link to="/gallery">
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 px-8 py-6 text-lg font-semibold rounded-lg"
+                >
+                  View Our Projects
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
