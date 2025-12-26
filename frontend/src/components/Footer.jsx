@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,11 +26,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-sm hover:text-amber-500 transition-colors">Home</a></li>
-              <li><a href="#services" className="text-sm hover:text-amber-500 transition-colors">Services</a></li>
-              <li><a href="#process" className="text-sm hover:text-amber-500 transition-colors">Our Process</a></li>
-              <li><a href="#faq" className="text-sm hover:text-amber-500 transition-colors">FAQ</a></li>
-              <li><a href="#contact-form" className="text-sm hover:text-amber-500 transition-colors">Contact</a></li>
+              <li><Link to="/" className="text-sm hover:text-amber-500 transition-colors">Home</Link></li>
+              <li><Link to="/about" className="text-sm hover:text-amber-500 transition-colors">About Us</Link></li>
+              <li><Link to="/gallery" className="text-sm hover:text-amber-500 transition-colors">Our Works</Link></li>
+              <li><Link to="/contact" className="text-sm hover:text-amber-500 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -37,11 +37,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li><span className="text-sm">Modular Kitchen Design</span></li>
-              <li><span className="text-sm">Full Home Interiors</span></li>
-              <li><span className="text-sm">Home Renovation</span></li>
-              <li><span className="text-sm">Custom Furniture</span></li>
-              <li><span className="text-sm">Wardrobe Solutions</span></li>
+              <li><Link to="/modular-kitchen" className="text-sm hover:text-amber-500 transition-colors">Modular Kitchen Design</Link></li>
+              <li><Link to="/full-home-interiors" className="text-sm hover:text-amber-500 transition-colors">Full Home Interiors</Link></li>
+              <li><Link to="/home-renovation" className="text-sm hover:text-amber-500 transition-colors">Home Renovation</Link></li>
+              <li><Link to="/custom-furniture" className="text-sm hover:text-amber-500 transition-colors">Custom Furniture</Link></li>
             </ul>
           </div>
 
@@ -78,11 +77,26 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-stone-800 pt-8 text-center">
-          <p className="text-sm text-stone-400">
-            © {currentYear} Arki Dots. All rights reserved. | Designed with care in Kerala
-          </p>
+        {/* Bottom Bar with Policy Links */}
+        <div className="border-t border-stone-800 pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-stone-400">
+              © {currentYear} Arki Dots. All rights reserved. | Designed with care in Kerala
+            </p>
+            <div className="flex flex-wrap items-center gap-4 text-sm">
+              <Link to="/privacy-policy" className="text-stone-400 hover:text-amber-500 transition-colors">
+                Privacy Policy
+              </Link>
+              <span className="text-stone-700">|</span>
+              <Link to="/terms-conditions" className="text-stone-400 hover:text-amber-500 transition-colors">
+                Terms & Conditions
+              </Link>
+              <span className="text-stone-700">|</span>
+              <Link to="/warranty-policy" className="text-stone-400 hover:text-amber-500 transition-colors">
+                Warranty & Service
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
