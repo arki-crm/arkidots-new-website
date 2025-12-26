@@ -148,41 +148,37 @@ const Home = () => {
             alt="Modern luxury home interior" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-stone-900/90 via-stone-900/70 to-stone-900/50"></div>
+          <div className="absolute inset-0 bg-stone-900/60"></div>
         </div>
         
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <MapPin className="w-4 h-4" />
-              <span>Based in Vatakara | Serving All of Kerala</span>
-            </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Premium Interior Designers in Kozhikode & North Kerala
-            </h1>
-            <p className="text-lg sm:text-xl text-stone-200 mb-8 leading-relaxed">
-              Arki Dots transforms homes across Vatakara, Nadapuram, Kozhikode, Thalassery, and Kannur with stunning modular kitchens, wardrobes, and complete home interiors. Experience quality craftsmanship trusted by Kerala families.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
-              >
-                Get Free Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Link to="/gallery">
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 px-8 py-6 text-lg font-semibold rounded-lg"
-                >
-                  View Our Projects
-                </Button>
-              </Link>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Logo Mark */}
+          <div className="flex justify-center mb-8">
+            <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center border border-white/20">
+              <span className="text-white font-semibold text-2xl tracking-tight">AD</span>
             </div>
           </div>
+          
+          {/* Two-line Headline */}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-white mb-6 leading-tight tracking-tight">
+            Premium Home Interiors
+            <span className="block mt-2 text-stone-300">in Kozhikode & North Kerala</span>
+          </h1>
+          
+          {/* Short Supporting Subtext */}
+          <p className="text-lg text-stone-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+            Modular kitchens, wardrobes, and complete home interiors crafted with precision. Trusted by families across Kerala.
+          </p>
+          
+          {/* Single CTA Button */}
+          <Button 
+            size="lg" 
+            className="bg-brand hover:bg-brand-dark text-white px-10 py-6 text-base font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
+          >
+            Get Free Consultation
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </Button>
         </div>
       </section>
 
