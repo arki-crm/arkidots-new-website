@@ -383,7 +383,7 @@ const ModularKitchen = () => {
                   <span className="inline-block bg-stone-100 text-stone-700 px-3 py-1 rounded-full text-sm font-medium">{step.duration}</span>
                 </div>
                 {index < processSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-amber-200"></div>
+                  <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-brand-muted"></div>
                 )}
               </div>
             ))}
