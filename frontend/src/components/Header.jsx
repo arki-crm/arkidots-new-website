@@ -37,7 +37,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="#home" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-brand to-brand rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">AD</span>
               </div>
               <span className="text-xl font-bold text-stone-900">Arki Dots</span>
@@ -50,13 +50,13 @@ const Header = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href, item.link)}
-                className="text-stone-700 hover:text-amber-600 font-medium transition-colors duration-200"
+                className="text-stone-700 hover:text-brand font-medium transition-colors duration-200"
               >
                 {item.name}
               </button>
             ))}
             <Button 
-              className="bg-amber-600 hover:bg-amber-700 text-white rounded-lg transition-all duration-300 hover:scale-105"
+              className="bg-brand hover:bg-brand-dark text-white rounded-lg transition-all duration-300 hover:scale-105"
               onClick={() => navigate('/contact')}
             >
               <Phone className="w-4 h-4 mr-2" />
@@ -68,7 +68,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-stone-700 hover:text-amber-600 transition-colors"
+              className="text-stone-700 hover:text-brand transition-colors"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -83,13 +83,13 @@ const Header = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href, item.link)}
-                  className="text-stone-700 hover:text-amber-600 font-medium transition-colors duration-200 text-left"
+                  className="text-stone-700 hover:text-brand font-medium transition-colors duration-200 text-left"
                 >
                   {item.name}
                 </button>
               ))}
               <Button 
-                className="bg-amber-600 hover:bg-amber-700 text-white rounded-lg w-full"
+                className="bg-brand hover:bg-brand-dark text-white rounded-lg w-full"
                 onClick={() => { navigate('/contact'); setIsMenuOpen(false); }}
               >
                 <Phone className="w-4 h-4 mr-2" />
