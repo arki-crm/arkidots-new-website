@@ -34,28 +34,32 @@ const Header = () => {
   const logoUrl = 'https://customer-assets.emergentagent.com/job_interiordesign-pro/artifacts/qfhhoque_log%20a%20only%20%282%29.png';
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm" role="banner">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#home" className="flex items-center space-x-3">
+            <a href="/" className="flex items-center space-x-3" aria-label="Arki Dots - Home">
               <img 
                 src={logoUrl} 
-                alt="Arki Dots Logo" 
+                alt="Arki Dots - Interior Designers Kerala" 
                 className="h-10 w-10 object-contain"
+                width="40"
+                height="40"
               />
               <span className="text-xl font-bold text-stone-900">Arki Dots</span>
             </a>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8" role="menubar">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href, item.link)}
                 className="text-stone-700 hover:text-brand font-medium transition-colors duration-200"
+                role="menuitem"
+                aria-label={`Navigate to ${item.name}`}
               >
                 {item.name}
               </button>
