@@ -81,7 +81,7 @@ const Header = () => {
               {navItems.map((item) => (
                 <button
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => scrollToSection(item.href, item.link)}
                   className="text-stone-700 hover:text-amber-600 font-medium transition-colors duration-200 text-left"
                 >
                   {item.name}
@@ -89,7 +89,7 @@ const Header = () => {
               ))}
               <Button 
                 className="bg-amber-600 hover:bg-amber-700 text-white rounded-lg w-full"
-                onClick={() => scrollToSection('#contact-form')}
+                onClick={() => { navigate('/contact'); setIsMenuOpen(false); }}
               >
                 <Phone className="w-4 h-4 mr-2" />
                 Get Consultation
