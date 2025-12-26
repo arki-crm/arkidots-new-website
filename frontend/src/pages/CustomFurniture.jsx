@@ -365,7 +365,7 @@ const CustomFurniture = () => {
                   </CardContent>
                 </Card>
                 {index < customizationProcess.length - 1 && (
-                  <div className="hidden lg:block absolute left-8 top-full w-0.5 h-8 bg-amber-200"></div>
+                  <div className="hidden lg:block absolute left-8 top-full w-0.5 h-8 bg-brand-muted"></div>
                 )}
               </div>
             ))}
