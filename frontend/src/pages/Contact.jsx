@@ -118,7 +118,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                       placeholder="Enter your full name"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500 h-12"
+                      className="border-stone-300 focus:border-brand-soft0 focus:ring-brand-soft0 h-12"
                     />
                   </div>
 
@@ -135,7 +135,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={(e) => setFormData({...formData, phone: e.target.value})}
                         placeholder="Enter phone number"
-                        className="border-stone-300 focus:border-amber-500 focus:ring-amber-500 h-12"
+                        className="border-stone-300 focus:border-brand-soft0 focus:ring-brand-soft0 h-12"
                       />
                     </div>
                     
@@ -150,7 +150,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
                         placeholder="Enter email address"
-                        className="border-stone-300 focus:border-amber-500 focus:ring-amber-500 h-12"
+                        className="border-stone-300 focus:border-brand-soft0 focus:ring-brand-soft0 h-12"
                       />
                     </div>
                   </div>
@@ -166,7 +166,7 @@ const Contact = () => {
                         value={formData.city}
                         onValueChange={(value) => setFormData({...formData, city: value})}
                       >
-                        <SelectTrigger id="city" className="border-stone-300 focus:border-amber-500 focus:ring-amber-500 h-12">
+                        <SelectTrigger id="city" className="border-stone-300 focus:border-brand-soft0 focus:ring-brand-soft0 h-12">
                           <SelectValue placeholder="Select your city" />
                         </SelectTrigger>
                         <SelectContent>
@@ -186,7 +186,7 @@ const Contact = () => {
                         value={formData.projectType}
                         onValueChange={(value) => setFormData({...formData, projectType: value})}
                       >
-                        <SelectTrigger id="projectType" className="border-stone-300 focus:border-amber-500 focus:ring-amber-500 h-12">
+                        <SelectTrigger id="projectType" className="border-stone-300 focus:border-brand-soft0 focus:ring-brand-soft0 h-12">
                           <SelectValue placeholder="Select project type" />
                         </SelectTrigger>
                         <SelectContent>
@@ -210,7 +210,7 @@ const Contact = () => {
                     type="submit" 
                     disabled={isSubmitting}
                     size="lg" 
-                    className="w-full bg-amber-600 hover:bg-amber-700 disabled:bg-stone-400 text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="w-full bg-brand hover:bg-brand-dark disabled:bg-stone-400 text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                   >
                     {isSubmitting ? 'Submitting...' : 'Get Free Design Consultation'}
                   </Button>
@@ -241,9 +241,9 @@ const Contact = () => {
                 <div className="space-y-4">
                   <a 
                     href="tel:+919876543210" 
-                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-amber-50 transition-colors group"
+                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-brand-soft transition-colors group"
                   >
-                    <div className="flex-shrink-0 w-10 h-10 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                    <div className="flex-shrink-0 w-10 h-10 bg-brand-soft text-brand rounded-full flex items-center justify-center group-hover:bg-brand group-hover:text-white transition-colors">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
@@ -254,9 +254,9 @@ const Contact = () => {
 
                   <a 
                     href="mailto:info@arkidots.com" 
-                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-amber-50 transition-colors group"
+                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-brand-soft transition-colors group"
                   >
-                    <div className="flex-shrink-0 w-10 h-10 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                    <div className="flex-shrink-0 w-10 h-10 bg-brand-soft text-brand rounded-full flex items-center justify-center group-hover:bg-brand group-hover:text-white transition-colors">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
@@ -266,7 +266,7 @@ const Contact = () => {
                   </a>
 
                   <div className="flex items-start gap-3 p-3">
-                    <div className="flex-shrink-0 w-10 h-10 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center">
+                    <div className="flex-shrink-0 w-10 h-10 bg-brand-soft text-brand rounded-full flex items-center justify-center">
                       <MapPin className="w-5 h-5" />
                     </div>
                     <div>
@@ -276,7 +276,7 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start gap-3 p-3">
-                    <div className="flex-shrink-0 w-10 h-10 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center">
+                    <div className="flex-shrink-0 w-10 h-10 bg-brand-soft text-brand rounded-full flex items-center justify-center">
                       <Clock className="w-5 h-5" />
                     </div>
                     <div>
@@ -289,20 +289,20 @@ const Contact = () => {
             </Card>
 
             {/* What Happens Next */}
-            <Card className="border-0 shadow-lg bg-gradient-to-br from-amber-50 to-stone-50">
+            <Card className="border-0 shadow-lg bg-gradient-to-br from-brand-soft to-stone-50">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-stone-900 mb-4">What Happens Next?</h3>
                 <ol className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-6 h-6 bg-amber-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">1</span>
+                    <span className="flex-shrink-0 w-6 h-6 bg-brand text-white rounded-full flex items-center justify-center text-sm font-semibold">1</span>
                     <p className="text-sm text-stone-700">Our designer contacts you within 24 hours</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-6 h-6 bg-amber-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">2</span>
+                    <span className="flex-shrink-0 w-6 h-6 bg-brand text-white rounded-full flex items-center justify-center text-sm font-semibold">2</span>
                     <p className="text-sm text-stone-700">Free home visit and requirement discussion</p>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-6 h-6 bg-amber-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">3</span>
+                    <span className="flex-shrink-0 w-6 h-6 bg-brand text-white rounded-full flex items-center justify-center text-sm font-semibold">3</span>
                     <p className="text-sm text-stone-700">Receive 3D designs and detailed quotation</p>
                   </li>
                 </ol>
