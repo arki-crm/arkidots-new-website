@@ -13,9 +13,14 @@ const Gallery = () => {
   return (
     <div className="min-h-screen bg-stone-50">
       <Helmet>
-        <title>Our Works - Interior Design Projects Gallery | Arki Dots Kerala</title>
-        <meta name="description" content="View completed interior design projects by Arki Dots across Kerala. Apartments, villas, renovations - see our portfolio of home transformations." />
-        <meta name="keywords" content="interior design portfolio Kerala, completed projects Arki Dots, home interior gallery, apartment interior photos Kerala" />
+        <title>Interior Design Projects Gallery | Arki Dots Kerala Portfolio</title>
+        <meta name="description" content="View Arki Dots completed interior projects in Kerala. Homes in Vatakara, Kozhikode, Kannur & more. See our portfolio of modular kitchens, wardrobes & home transformations." />
+        <meta name="keywords" content="interior design portfolio Kerala, Arki Dots projects, home interior gallery Kozhikode, apartment interior photos Kerala, Vatakara interior design" />
+        <meta property="og:title" content="Interior Design Projects Gallery | Arki Dots" />
+        <meta property="og:description" content="View our portfolio of completed interior projects across Kerala." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://arkidots.com/gallery" />
       </Helmet>
 
       {/* Hero Section */}
