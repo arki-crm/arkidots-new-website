@@ -13,6 +13,14 @@ module.exports = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+  			// Arki Dots Brand Colors
+  			brand: {
+  				DEFAULT: '#E84C5B',
+  				dark: '#C93E4B',
+  				light: '#F06B78',
+  				soft: '#FDEDEE',
+  				muted: '#F9D5D8',
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
