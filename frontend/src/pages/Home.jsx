@@ -40,7 +40,7 @@ const Home = () => {
       description: 'Complete home interior solutions from concept to execution with personalized design.',
       image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzY2NzQ1ODU4fDA&ixlib=rb-4.1.0&q=85',
       icon: <HomeIcon className="w-6 h-6" />,
-      link: '/'
+      link: '/full-home-interiors'
     },
     {
       title: 'Home Renovation',
