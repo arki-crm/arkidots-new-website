@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { ArrowLeft, X, ChevronLeft, ChevronRight, Lightbulb, Phone, Palette, Layers, Settings, Gem, Tv, Layout, Armchair, LightbulbIcon, BedDouble, Square, Grid3X3, Sun, DoorOpen, Archive, Shield, CheckCircle2, Info } from 'lucide-react';
