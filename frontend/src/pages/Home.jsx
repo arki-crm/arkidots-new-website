@@ -525,9 +525,15 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Serving Across Kerala</h2>
-            <p className="text-lg text-stone-600 max-w-2xl mx-auto mb-8">
-              Arki Dots is proud to serve homeowners throughout Kerala with premium interior design services
+            <span className="inline-block bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-semibold mb-4">
+              Our Service Areas
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Arki Dots Serves All of North Kerala</h2>
+            <p className="text-lg text-stone-600 max-w-2xl mx-auto mb-4">
+              Based in Vatakara, Arki Dots proudly serves homeowners throughout Kozhikode district, Kannur, and across Kerala with premium interior design services.
+            </p>
+            <p className="text-base text-stone-500 max-w-xl mx-auto mb-8">
+              Free home consultations available in Vatakara, Nadapuram, Kozhikode, Thalassery, Kannur, and surrounding areas.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               {locations.map((location, index) => (
