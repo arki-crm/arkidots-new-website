@@ -63,22 +63,22 @@ const Home = () => {
     {
       icon: <Award className="w-8 h-8" />,
       title: '10+ Years Experience',
-      description: 'Proven track record in delivering exceptional interior designs across Kerala'
+      description: 'Trusted by hundreds of families across Vatakara, Kozhikode, Kannur, and all of Kerala'
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: 'Expert Design Team',
-      description: 'Skilled designers and craftsmen dedicated to bringing your vision to life'
+      description: 'Skilled designers based in Vatakara, serving North Kerala with personalized attention'
     },
     {
       icon: <CheckCircle2 className="w-8 h-8" />,
       title: 'Quality Assurance',
-      description: 'Premium materials and meticulous attention to detail in every project'
+      description: 'Premium materials and meticulous craftsmanship that Arki Dots is known for'
     },
     {
       icon: <Clock className="w-8 h-8" />,
       title: 'On-Time Delivery',
-      description: 'Committed to completing projects within agreed timelines without compromising quality'
+      description: 'Reliable project timelines with dedicated teams for Kozhikode district and nearby areas'
     }
   ];
 
