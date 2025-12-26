@@ -251,7 +251,7 @@ const FullHomeInteriors = () => {
       <section className="bg-stone-50 py-4 border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-sm text-stone-600">
-            <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
+            <Link to="/" className="hover:text-brand transition-colors">Home</Link>
             <span>/</span>
             <span className="text-stone-900 font-medium">Full Home Interiors</span>
           </div>
@@ -259,11 +259,11 @@ const FullHomeInteriors = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <HomeIcon className="w-4 h-4" />
                 <span>Complete Interior Solutions for Kerala Homes</span>
               </div>
@@ -276,7 +276,7 @@ const FullHomeInteriors = () => {
               <div className="flex flex-wrap gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Get Free Consultation
@@ -285,7 +285,7 @@ const FullHomeInteriors = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-stone-300 hover:border-amber-600 text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
+                  className="border-2 border-stone-300 hover:border-brand text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
                   onClick={() => document.getElementById('cost-estimate').scrollIntoView({ behavior: 'smooth' })}
                 >
                   View Pricing
@@ -299,7 +299,7 @@ const FullHomeInteriors = () => {
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
-                <div className="text-3xl font-bold text-amber-600">500+</div>
+                <div className="text-3xl font-bold text-brand">500+</div>
                 <div className="text-sm text-stone-600">Homes Transformed</div>
               </div>
             </div>
@@ -319,7 +319,7 @@ const FullHomeInteriors = () => {
             {inclusions.map((item, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                  <div className="w-16 h-16 bg-brand-soft text-brand rounded-full flex items-center justify-center mb-4 group-hover:bg-brand group-hover:text-white transition-colors">
                     {item.icon}
                   </div>
                   <CardTitle className="text-xl text-stone-900">{item.title}</CardTitle>
@@ -328,7 +328,7 @@ const FullHomeInteriors = () => {
                   <ul className="space-y-2">
                     {item.items.map((subItem, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-sm text-stone-600">
-                        <CheckCircle2 className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-4 h-4 text-brand flex-shrink-0 mt-0.5" />
                         <span>{subItem}</span>
                       </li>
                     ))}
@@ -361,21 +361,21 @@ const FullHomeInteriors = () => {
                   </div>
                   <div className="p-8 lg:p-12 flex flex-col justify-center">
                     <h3 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-2">{home.type}</h3>
-                    <p className="text-amber-600 font-semibold mb-4">Typical Area: {home.area}</p>
+                    <p className="text-brand font-semibold mb-4">Typical Area: {home.area}</p>
                     
                     <div className="mb-6">
                       <h4 className="font-semibold text-stone-900 mb-3">What We Cover:</h4>
                       <ul className="space-y-2">
                         {home.scope.map((item, idx) => (
                           <li key={idx} className="flex items-start gap-2 text-stone-600">
-                            <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                            <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                             <span>{item}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                     
-                    <div className="bg-amber-50 p-4 rounded-lg">
+                    <div className="bg-brand-soft p-4 rounded-lg">
                       <p className="text-sm text-stone-700">
                         <strong>Ideal For:</strong> {home.idealFor}
                       </p>
@@ -398,7 +398,7 @@ const FullHomeInteriors = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {costRanges.map((cost, index) => (
-              <Card key={index} className="border-2 hover:border-amber-600 transition-all duration-300">
+              <Card key={index} className="border-2 hover:border-brand transition-all duration-300">
                 <CardHeader className="text-center pb-4">
                   <CardTitle className="text-xl text-stone-900 mb-2">{cost.homeType}</CardTitle>
                   <p className="text-sm text-stone-600">{cost.area}</p>
@@ -410,7 +410,7 @@ const FullHomeInteriors = () => {
                   </div>
                   <div>
                     <p className="text-sm text-stone-600 mb-1">Premium Package</p>
-                    <p className="text-2xl font-bold text-amber-600">{cost.premiumRange}</p>
+                    <p className="text-2xl font-bold text-brand">{cost.premiumRange}</p>
                   </div>
                   <div className="border-t pt-4">
                     <p className="text-sm text-stone-600 mb-2"><strong>Includes:</strong></p>
@@ -418,7 +418,7 @@ const FullHomeInteriors = () => {
                   </div>
                   <div className="bg-stone-50 p-3 rounded-lg">
                     <p className="text-sm text-stone-700">
-                      <Clock className="w-4 h-4 inline mr-1 text-amber-600" />
+                      <Clock className="w-4 h-4 inline mr-1 text-brand" />
                       <strong>Timeline:</strong> {cost.timeline}
                     </p>
                   </div>
@@ -427,7 +427,7 @@ const FullHomeInteriors = () => {
             ))}
           </div>
 
-          <div className="bg-amber-50 border-l-4 border-amber-600 p-6 rounded-r-lg">
+          <div className="bg-brand-soft border-l-4 border-brand p-6 rounded-r-lg">
             <p className="text-stone-700 leading-relaxed">
               <strong>Important Note:</strong> These are indicative price ranges based on typical projects. Your actual cost depends on material selection (standard vs. premium), degree of customization, any structural changes needed, and appliances included. We provide detailed, itemized quotations after site visit and design discussion. No hidden costs - you know exactly what you're paying for.
             </p>
@@ -450,7 +450,7 @@ const FullHomeInteriors = () => {
                   <CardContent className="p-8">
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                       <div className="text-center lg:text-left">
-                        <div className="inline-flex items-center justify-center w-20 h-20 bg-amber-100 text-amber-600 rounded-full mb-4">
+                        <div className="inline-flex items-center justify-center w-20 h-20 bg-brand-soft text-brand rounded-full mb-4">
                           <span className="text-3xl font-bold">{phase.step}</span>
                         </div>
                         <p className="text-sm font-semibold text-stone-600">{phase.duration}</p>
@@ -465,7 +465,7 @@ const FullHomeInteriors = () => {
                           <div className="flex flex-wrap gap-2">
                             {phase.deliverables.map((item, idx) => (
                               <span key={idx} className="inline-flex items-center gap-1 bg-stone-100 text-stone-700 px-3 py-1 rounded-full text-sm">
-                                <CheckCircle2 className="w-4 h-4 text-amber-600" />
+                                <CheckCircle2 className="w-4 h-4 text-brand" />
                                 {item}
                               </span>
                             ))}
@@ -495,7 +495,7 @@ const FullHomeInteriors = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {qualityCommitments.map((item, index) => (
               <div key={index} className="text-center group">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 text-amber-600 rounded-full mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-300">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-soft text-brand rounded-full mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-300">
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900 mb-3">{item.title}</h3>
@@ -507,7 +507,7 @@ const FullHomeInteriors = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="py-20 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">What Our Clients Say</h2>
@@ -518,11 +518,11 @@ const FullHomeInteriors = () => {
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-8">
-                  <Quote className="w-10 h-10 text-amber-600 mb-4" />
+                  <Quote className="w-10 h-10 text-brand mb-4" />
                   <p className="text-stone-600 mb-6 leading-relaxed italic">"{testimonial.text}"</p>
                   <div className="flex items-center gap-1 mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+                      <svg key={i} className="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     ))}
@@ -549,7 +549,7 @@ const FullHomeInteriors = () => {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="bg-stone-50 mb-4 rounded-lg px-6 border-0 shadow-sm">
-                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-amber-600 transition-colors">
+                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-brand transition-colors">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-stone-600 leading-relaxed">
@@ -562,7 +562,7 @@ const FullHomeInteriors = () => {
       </section>
 
       {/* CTA Contact Form Section */}
-      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-amber-50">
+      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Ready to Transform Your Home?</h2>
@@ -580,7 +580,7 @@ const FullHomeInteriors = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                       placeholder="Enter your name"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                   
@@ -592,7 +592,7 @@ const FullHomeInteriors = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
                       placeholder="Enter your phone number"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                 </div>
@@ -605,7 +605,7 @@ const FullHomeInteriors = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     placeholder="Enter your email"
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
@@ -616,7 +616,7 @@ const FullHomeInteriors = () => {
                       value={formData.homeType}
                       onChange={(e) => setFormData({...formData, homeType: e.target.value})}
                       placeholder="e.g., 2BHK Apartment"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                   
@@ -626,7 +626,7 @@ const FullHomeInteriors = () => {
                       value={formData.location}
                       onChange={(e) => setFormData({...formData, location: e.target.value})}
                       placeholder="e.g., Kochi, Trivandrum"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                 </div>
@@ -638,14 +638,14 @@ const FullHomeInteriors = () => {
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     placeholder="Tell us about your interior requirements, timeline, budget range, etc."
                     rows={4}
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-brand hover:bg-brand-dark text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Submit Consultation Request
                 </Button>
