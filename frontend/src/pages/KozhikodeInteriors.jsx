@@ -168,7 +168,7 @@ const KozhikodeInteriors = () => {
       <section className="bg-stone-50 py-4 border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-sm text-stone-600">
-            <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
+            <Link to="/" className="hover:text-brand transition-colors">Home</Link>
             <span>/</span>
             <span className="text-stone-900 font-medium">Interior Designers in Kozhikode</span>
           </div>
@@ -176,11 +176,11 @@ const KozhikodeInteriors = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <MapPin className="w-4 h-4" />
                 <span>Serving Kozhikode & Calicut Region</span>
               </div>
@@ -193,7 +193,7 @@ const KozhikodeInteriors = () => {
               <div className="flex flex-wrap gap-4 mb-8">
                 <Button 
                   size="lg" 
-                  className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Get Free Home Visit
@@ -202,7 +202,7 @@ const KozhikodeInteriors = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-stone-300 hover:border-amber-600 text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
+                  className="border-2 border-stone-300 hover:border-brand text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
                   onClick={() => {
                     window.location.href = 'tel:+919876543210';
                   }}
@@ -215,15 +215,15 @@ const KozhikodeInteriors = () => {
               {/* Local Trust Indicators */}
               <div className="grid grid-cols-3 gap-6 pt-6 border-t border-stone-200">
                 <div>
-                  <div className="text-2xl font-bold text-amber-600">100+</div>
+                  <div className="text-2xl font-bold text-brand">100+</div>
                   <div className="text-sm text-stone-600">Projects in Kozhikode</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-amber-600">5 Years</div>
+                  <div className="text-2xl font-bold text-brand">5 Years</div>
                   <div className="text-sm text-stone-600">Warranty</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-amber-600">Free</div>
+                  <div className="text-2xl font-bold text-brand">Free</div>
                   <div className="text-sm text-stone-600">Home Visit</div>
                 </div>
               </div>
@@ -268,7 +268,7 @@ const KozhikodeInteriors = () => {
             {services.map((service, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-brand-soft text-brand rounded-full flex items-center justify-center mb-4">
                     {service.icon}
                   </div>
                   <CardTitle className="text-2xl text-stone-900">{service.title}</CardTitle>
@@ -278,7 +278,7 @@ const KozhikodeInteriors = () => {
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-stone-700">
-                        <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -301,7 +301,7 @@ const KozhikodeInteriors = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyChooseUs.map((item, index) => (
               <div key={index} className="text-center group">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 text-amber-600 rounded-full mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-300">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-soft text-brand rounded-full mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-300">
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900 mb-3">{item.title}</h3>
@@ -325,10 +325,10 @@ const KozhikodeInteriors = () => {
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
                   <div className="text-center mb-4">
-                    <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 text-amber-600 rounded-full mb-2">
+                    <div className="inline-flex items-center justify-center w-12 h-12 bg-brand-soft text-brand rounded-full mb-2">
                       <span className="text-xl font-bold">{index + 1}</span>
                     </div>
-                    <p className="text-sm font-semibold text-amber-600">{phase.duration}</p>
+                    <p className="text-sm font-semibold text-brand">{phase.duration}</p>
                   </div>
                   <CardTitle className="text-xl text-stone-900 text-center">{phase.phase}</CardTitle>
                   <CardDescription className="text-center">{phase.description}</CardDescription>
@@ -337,7 +337,7 @@ const KozhikodeInteriors = () => {
                   <ul className="space-y-2">
                     {phase.activities.map((activity, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-sm text-stone-600">
-                        <CheckCircle2 className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-4 h-4 text-brand flex-shrink-0 mt-0.5" />
                         <span>{activity}</span>
                       </li>
                     ))}
@@ -359,7 +359,7 @@ const KozhikodeInteriors = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {kozhikodeAreas.map((area, index) => (
-                <span key={index} className="inline-flex items-center gap-2 bg-stone-100 text-stone-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-amber-100 hover:text-amber-700 transition-colors">
+                <span key={index} className="inline-flex items-center gap-2 bg-stone-100 text-stone-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-brand-soft hover:text-brand-dark transition-colors">
                   <MapPin className="w-4 h-4" />
                   {area}
                 </span>
@@ -382,7 +382,7 @@ const KozhikodeInteriors = () => {
               {/* Google Maps Embed Placeholder */}
               <div className="absolute inset-0 bg-stone-200 flex items-center justify-center">
                 <div className="text-center">
-                  <MapPin className="w-16 h-16 text-amber-600 mx-auto mb-4" />
+                  <MapPin className="w-16 h-16 text-brand mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-stone-900 mb-2">Kozhikode, Kerala</h3>
                   <p className="text-stone-600">Serving clients across Calicut city and surrounding areas</p>
                 </div>
@@ -415,7 +415,7 @@ const KozhikodeInteriors = () => {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="bg-stone-50 mb-4 rounded-lg px-6 border-0 shadow-sm">
-                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-amber-600 transition-colors">
+                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-brand transition-colors">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-stone-600 leading-relaxed">
@@ -428,7 +428,7 @@ const KozhikodeInteriors = () => {
       </section>
 
       {/* Contact CTA Section */}
-      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-amber-50">
+      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Get Your Free Home Visit in Kozhikode</h2>
@@ -446,7 +446,7 @@ const KozhikodeInteriors = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                       placeholder="Enter your name"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                   
@@ -458,7 +458,7 @@ const KozhikodeInteriors = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
                       placeholder="Enter your phone number"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                 </div>
@@ -471,7 +471,7 @@ const KozhikodeInteriors = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     placeholder="Enter your email"
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
@@ -482,7 +482,7 @@ const KozhikodeInteriors = () => {
                       value={formData.area}
                       onChange={(e) => setFormData({...formData, area: e.target.value})}
                       placeholder="e.g., Kallai, West Hill"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                   
@@ -492,7 +492,7 @@ const KozhikodeInteriors = () => {
                       value={formData.serviceType}
                       onChange={(e) => setFormData({...formData, serviceType: e.target.value})}
                       placeholder="e.g., Full home interior"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                 </div>
@@ -504,14 +504,14 @@ const KozhikodeInteriors = () => {
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     placeholder="Tell us about your interior design needs, property type, timeline, etc."
                     rows={4}
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-brand hover:bg-brand-dark text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Request Free Home Visit
                 </Button>
@@ -519,14 +519,14 @@ const KozhikodeInteriors = () => {
               
               <div className="mt-8 pt-8 border-t border-stone-200 text-center space-y-4">
                 <div className="flex items-center justify-center gap-2 text-stone-700">
-                  <Phone className="w-5 h-5 text-amber-600" />
+                  <Phone className="w-5 h-5 text-brand" />
                   <span className="font-semibold">Call:</span>
-                  <a href="tel:+919876543210" className="text-amber-600 hover:text-amber-700">+91 98765 43210</a>
+                  <a href="tel:+919876543210" className="text-brand hover:text-brand-dark">+91 98765 43210</a>
                 </div>
                 <div className="flex items-center justify-center gap-2 text-stone-700">
-                  <Mail className="w-5 h-5 text-amber-600" />
+                  <Mail className="w-5 h-5 text-brand" />
                   <span className="font-semibold">Email:</span>
-                  <a href="mailto:info@arkidots.com" className="text-amber-600 hover:text-amber-700">info@arkidots.com</a>
+                  <a href="mailto:info@arkidots.com" className="text-brand hover:text-brand-dark">info@arkidots.com</a>
                 </div>
               </div>
             </CardContent>
