@@ -16,6 +16,8 @@ import ProjectDetail from './pages/ProjectDetail';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import WarrantyPolicy from './pages/WarrantyPolicy';
+import DesignIdeas from './pages/DesignIdeas';
+import DesignCategory from './pages/DesignCategory';
 import { Toaster } from './components/ui/sonner';
 
 function App() {
