@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { ArrowLeft, ArrowRight, X, ChevronLeft, ChevronRight, Lightbulb, Phone } from 'lucide-react';
+import { ArrowLeft, X, ChevronLeft, ChevronRight, Lightbulb, Phone } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { getCategoryBySlug, getIdeasByCategoryId, designCategories } from '../data/designIdeas';
 
@@ -13,6 +13,54 @@ const DesignCategory = () => {
   // Find category by slug
   const category = getCategoryBySlug(slug);
   const ideas = category ? getIdeasByCategoryId(category.id) : [];
+
+  const openLightbox = (idea, index) => {
+    setSelectedImage(idea);
+    setCurrentIndex(index);
+  };
+
+  const closeLightbox = useCallback(() => {
+    setSelectedImage(null);
+  }, []);
+
+  const goToPrevious = useCallback(() => {
+    if (ideas.length === 0) return;
+    const newIndex = currentIndex === 0 ? ideas.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+    setSelectedImage(ideas[newIndex]);
+  }, [currentIndex, ideas]);
+
+  const goToNext = useCallback(() => {
+    if (ideas.length === 0) return;
+    const newIndex = currentIndex === ideas.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+    setSelectedImage(ideas[newIndex]);
+  }, [currentIndex, ideas]);
+
+  // Handle keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!selectedImage) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') goToPrevious();
+      if (e.key === 'ArrowRight') goToNext();
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedImage, closeLightbox, goToPrevious, goToNext]);
+
+  // Prevent body scroll when lightbox is open
+  useEffect(() => {
+    if (selectedImage) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [selectedImage]);
 
   // If category not found
   if (!category) {
@@ -27,52 +75,6 @@ const DesignCategory = () => {
       </div>
     );
   }
-
-  const openLightbox = (idea, index) => {
-    setSelectedImage(idea);
-    setCurrentIndex(index);
-  };
-
-  const closeLightbox = () => {
-    setSelectedImage(null);
-  };
-
-  const goToPrevious = () => {
-    const newIndex = currentIndex === 0 ? ideas.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-    setSelectedImage(ideas[newIndex]);
-  };
-
-  const goToNext = () => {
-    const newIndex = currentIndex === ideas.length - 1 ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-    setSelectedImage(ideas[newIndex]);
-  };
-
-  // Handle keyboard navigation
-  React.useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (!selectedImage) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowLeft') goToPrevious();
-      if (e.key === 'ArrowRight') goToNext();
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedImage, currentIndex]);
-
-  // Prevent body scroll when lightbox is open
-  React.useEffect(() => {
-    if (selectedImage) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [selectedImage]);
 
   return (
     <div className="min-h-screen bg-stone-50">
