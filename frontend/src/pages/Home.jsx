@@ -552,7 +552,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Frequently Asked Questions</h2>
-            <p className="text-lg text-stone-600">Everything you need to know about our interior design services</p>
+            <p className="text-lg text-stone-600">Common questions about Arki Dots interior design services in Kerala</p>
           </div>
           
           <Accordion type="single" collapsible className="w-full">
