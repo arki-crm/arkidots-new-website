@@ -187,8 +187,13 @@ const ModularKitchen = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Modular Kitchen Designers in Kerala | Arki Dots - Custom Kitchen Solutions</title>
-        <meta name="description" content="Transform your kitchen with Arki Dots - Kerala's trusted modular kitchen designers. Custom L-shape, U-shape, Island kitchens. 5-year warranty. Price starts from ₹1.2L. Free consultation." />
-        <meta name="keywords" content="modular kitchen Kerala, kitchen designers Kochi, modular kitchen Trivandrum, kitchen interior design Kerala, modular kitchen price Kerala" />
+        <meta name="description" content="Transform your kitchen with Arki Dots - Kerala's trusted modular kitchen designers. Custom L-shape, U-shape, Island kitchens. 10-year warranty. Based in Vatakara, serving Kozhikode, Kannur & all Kerala." />
+        <meta name="keywords" content="modular kitchen Kerala, kitchen designers Vatakara, modular kitchen Kozhikode, kitchen interior design Kerala, modular kitchen price Kerala, Kannur kitchen design" />
+        <meta property="og:title" content="Modular Kitchen Designers in Kerala | Arki Dots" />
+        <meta property="og:description" content="Custom modular kitchens by Arki Dots. L-shape, U-shape, Island kitchens with 10-year warranty." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://arkidots.com/modular-kitchen" />
       </Helmet>
 
       {/* Breadcrumb */}
