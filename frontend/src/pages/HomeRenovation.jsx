@@ -199,7 +199,7 @@ const HomeRenovation = () => {
       <section className="bg-stone-50 py-4 border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-sm text-stone-600">
-            <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
+            <Link to="/" className="hover:text-brand transition-colors">Home</Link>
             <span>/</span>
             <span className="text-stone-900 font-medium">Home Renovation</span>
           </div>
@@ -207,11 +207,11 @@ const HomeRenovation = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Hammer className="w-4 h-4" />
                 <span>Transform Your Kerala Home</span>
               </div>
@@ -224,7 +224,7 @@ const HomeRenovation = () => {
               <div className="flex flex-wrap gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Get Free Site Inspection
@@ -233,7 +233,7 @@ const HomeRenovation = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-stone-300 hover:border-amber-600 text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
+                  className="border-2 border-stone-300 hover:border-brand text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
                   onClick={() => document.getElementById('cost-estimates').scrollIntoView({ behavior: 'smooth' })}
                 >
                   View Pricing
@@ -247,7 +247,7 @@ const HomeRenovation = () => {
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
-                <div className="text-3xl font-bold text-amber-600">300+</div>
+                <div className="text-3xl font-bold text-brand">300+</div>
                 <div className="text-sm text-stone-600">Renovations Completed</div>
               </div>
             </div>
@@ -284,7 +284,7 @@ const HomeRenovation = () => {
             {renovationTypes.map((type, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-brand-soft text-brand rounded-full flex items-center justify-center mb-4">
                     {type.icon}
                   </div>
                   <CardTitle className="text-xl text-stone-900">{type.title}</CardTitle>
@@ -294,7 +294,7 @@ const HomeRenovation = () => {
                   <ul className="space-y-2">
                     {type.scope.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-sm text-stone-600">
-                        <CheckCircle2 className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-4 h-4 text-brand flex-shrink-0 mt-0.5" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -321,7 +321,7 @@ const HomeRenovation = () => {
                   <CardContent className="p-8">
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                       <div className="text-center lg:text-left">
-                        <div className="inline-flex items-center justify-center w-20 h-20 bg-amber-100 text-amber-600 rounded-full mb-4">
+                        <div className="inline-flex items-center justify-center w-20 h-20 bg-brand-soft text-brand rounded-full mb-4">
                           <span className="text-3xl font-bold">{phase.step}</span>
                         </div>
                         <p className="text-sm font-semibold text-stone-600">{phase.duration}</p>
@@ -336,7 +336,7 @@ const HomeRenovation = () => {
                           <div className="flex flex-wrap gap-2">
                             {phase.deliverables.map((item, idx) => (
                               <span key={idx} className="inline-flex items-center gap-1 bg-stone-100 text-stone-700 px-3 py-1 rounded-full text-sm">
-                                <CheckCircle2 className="w-4 h-4 text-amber-600" />
+                                <CheckCircle2 className="w-4 h-4 text-brand" />
                                 {item}
                               </span>
                             ))}
@@ -365,7 +365,7 @@ const HomeRenovation = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {costEstimates.map((estimate, index) => (
-              <Card key={index} className="border-2 hover:border-amber-600 transition-all duration-300">
+              <Card key={index} className="border-2 hover:border-brand transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-xl text-stone-900 mb-2">{estimate.type}</CardTitle>
                   <div className="flex items-baseline gap-2 mb-1">
@@ -374,14 +374,14 @@ const HomeRenovation = () => {
                   </div>
                   <div className="flex items-baseline gap-2">
                     <span className="text-sm text-stone-600">Premium:</span>
-                    <span className="text-lg font-bold text-amber-600">{estimate.premium}</span>
+                    <span className="text-lg font-bold text-brand">{estimate.premium}</span>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-stone-600 mb-3">{estimate.includes}</p>
                   <div className="bg-stone-50 p-3 rounded-lg">
                     <p className="text-sm text-stone-700">
-                      <Clock className="w-4 h-4 inline mr-1 text-amber-600" />
+                      <Clock className="w-4 h-4 inline mr-1 text-brand" />
                       <strong>Timeline:</strong> {estimate.timeline}
                     </p>
                   </div>
@@ -390,7 +390,7 @@ const HomeRenovation = () => {
             ))}
           </div>
 
-          <div className="bg-amber-50 border-l-4 border-amber-600 p-6 rounded-r-lg">
+          <div className="bg-brand-soft border-l-4 border-brand p-6 rounded-r-lg">
             <p className="text-stone-700 leading-relaxed">
               <strong>Important:</strong> These are approximate ranges based on typical renovation projects in Kerala. Your actual cost will depend on the current condition of your home, materials you choose, extent of structural work needed, and any unforeseen issues discovered during work. We provide detailed, itemized quotations after site inspection so you know exactly what to expect.
             </p>
@@ -410,7 +410,7 @@ const HomeRenovation = () => {
             <Card className="border-0 shadow-md">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <Clock className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                  <Clock className="w-6 h-6 text-brand flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-stone-900 mb-2">Single Room Renovation: 2-3 weeks</h3>
                     <p className="text-sm text-stone-600">Includes bedroom, living room, or similar space with wardrobe, ceiling, painting, and finishing work.</p>
@@ -422,7 +422,7 @@ const HomeRenovation = () => {
             <Card className="border-0 shadow-md">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <Clock className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                  <Clock className="w-6 h-6 text-brand flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-stone-900 mb-2">Kitchen/Bathroom Renovation: 2-4 weeks</h3>
                     <p className="text-sm text-stone-600">Complete renovation including demolition, civil work, new installations, and finishing.</p>
@@ -434,7 +434,7 @@ const HomeRenovation = () => {
             <Card className="border-0 shadow-md">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <Clock className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                  <Clock className="w-6 h-6 text-brand flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-stone-900 mb-2">2BHK Full Renovation: 2-3 months</h3>
                     <p className="text-sm text-stone-600">Complete apartment/house renovation including all rooms, kitchen, bathrooms, and common areas.</p>
@@ -446,7 +446,7 @@ const HomeRenovation = () => {
             <Card className="border-0 shadow-md">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <Clock className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                  <Clock className="w-6 h-6 text-brand flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-stone-900 mb-2">3BHK/Villa Full Renovation: 3-4 months</h3>
                     <p className="text-sm text-stone-600">Larger homes with extensive work, structural repairs, and comprehensive renovation.</p>
@@ -469,7 +469,7 @@ const HomeRenovation = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyChoose.map((item, index) => (
               <div key={index} className="text-center group">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 text-amber-600 rounded-full mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-300">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-soft text-brand rounded-full mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-300">
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900 mb-3">{item.title}</h3>
@@ -491,7 +491,7 @@ const HomeRenovation = () => {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="bg-stone-50 mb-4 rounded-lg px-6 border-0 shadow-sm">
-                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-amber-600 transition-colors">
+                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-brand transition-colors">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-stone-600 leading-relaxed">
@@ -504,7 +504,7 @@ const HomeRenovation = () => {
       </section>
 
       {/* CTA Contact Form */}
-      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-amber-50">
+      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Ready to Start Your Home Renovation?</h2>
@@ -522,7 +522,7 @@ const HomeRenovation = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                       placeholder="Enter your name"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                   
@@ -534,7 +534,7 @@ const HomeRenovation = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
                       placeholder="Enter your phone number"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                 </div>
@@ -547,7 +547,7 @@ const HomeRenovation = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     placeholder="Enter your email"
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
@@ -558,7 +558,7 @@ const HomeRenovation = () => {
                       value={formData.location}
                       onChange={(e) => setFormData({...formData, location: e.target.value})}
                       placeholder="e.g., Kochi, Trivandrum"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                   
@@ -568,7 +568,7 @@ const HomeRenovation = () => {
                       value={formData.renovationType}
                       onChange={(e) => setFormData({...formData, renovationType: e.target.value})}
                       placeholder="e.g., Kitchen renovation"
-                      className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                      className="border-stone-300 focus:border-brand focus:ring-brand"
                     />
                   </div>
                 </div>
@@ -580,14 +580,14 @@ const HomeRenovation = () => {
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     placeholder="Describe what you want to renovate, any specific issues, timeline expectations, etc."
                     rows={4}
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-brand hover:bg-brand-dark text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Request Free Site Inspection
                 </Button>
