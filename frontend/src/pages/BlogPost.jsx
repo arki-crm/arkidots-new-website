@@ -301,7 +301,7 @@ const BlogPost = () => {
             Ready to Start Your Project?
           </h2>
           <p className="text-stone-600 mb-8">
-            Let's discuss how we can transform your home with beautiful, functional interiors.
+            Let us discuss how we can transform your home with beautiful, functional interiors.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
