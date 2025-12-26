@@ -61,19 +61,22 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>About Arki Dots | Interior Design & Turnkey Execution Company in Kerala</title>
-        <meta name="description" content="Arki Dots provides end-to-end home interior design and execution services across Kerala. Learn about our vision, mission, and process-driven approach to transforming homes." />
-        <meta name="keywords" content="about Arki Dots, interior design company Kerala, turnkey interiors, home interior execution Kerala" />
+        <title>About Arki Dots | Interior Designers in Vatakara, Kozhikode, Kerala</title>
+        <meta name="description" content="Arki Dots is a premium interior design company based in Vatakara, Kerala. We serve Kozhikode, Kannur, Thalassery, and all of North Kerala with modular kitchens and full home interiors." />
+        <meta name="keywords" content="about Arki Dots, interior design Vatakara, interior designers Kozhikode, home interiors Kannur, Kerala interior company" />
       </Helmet>
 
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="inline-block bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            Based in Vatakara, Kerala
+          </span>
           <h1 className="text-4xl sm:text-5xl font-bold text-stone-900 mb-6 leading-tight">
             About Arki Dots
           </h1>
           <p className="text-xl text-stone-600 leading-relaxed">
-            We design and execute home interiors across Kerala - from initial concepts to final installation, managing every aspect of the process so you don't have to.
+            Premium interior design and execution company serving Vatakara, Nadapuram, Kozhikode, Thalassery, Kannur, and homeowners across Kerala.
           </p>
         </div>
       </section>
@@ -83,13 +86,13 @@ const AboutUs = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-stone-700 leading-relaxed mb-6">
-              Arki Dots is an interior design and turnkey execution company based in Kerala. We handle complete home interior projects - modular kitchens, wardrobes, living spaces, bedrooms, renovations, and custom furniture.
+              Arki Dots is a trusted interior design and turnkey execution company headquartered in Vatakara, Kozhikode district. We specialize in complete home interior projects - modular kitchens, wardrobes, living spaces, bedrooms, renovations, and custom furniture for families across North Kerala.
             </p>
             <p className="text-lg text-stone-700 leading-relaxed mb-6">
-              What makes us different is our approach. We're not just designers who hand over drawings. We're not just contractors who execute someone else's plans. We manage the entire journey - from understanding what you need, to designing it, to manufacturing components, to coordinating installation, to final handover.
+              What makes Arki Dots different is our integrated approach. We manage the entire journey from understanding your needs, to designing solutions, to manufacturing components, to coordinating installation, and final handover. Homeowners in Vatakara, Nadapuram, Kozhikode, Thalassery, and Kannur trust Arki Dots because we deliver quality with accountability.
             </p>
             <p className="text-lg text-stone-700 leading-relaxed">
-              This integrated approach means accountability. When you work with Arki Dots, there's one team responsible for everything. If something needs adjusting, we handle it. If timelines need managing, we coordinate it. If decisions need making, we guide you through them.
+              When you work with Arki Dots, there is one team responsible for everything. Our proximity to clients in North Kerala means faster response times, convenient site visits, and reliable after-service support that sets us apart from larger, impersonal companies.
             </p>
           </div>
         </div>
