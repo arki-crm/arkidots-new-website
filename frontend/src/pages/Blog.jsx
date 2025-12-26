@@ -25,13 +25,13 @@ const Blog = () => {
       <section className="relative py-16 sm:py-20 bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-amber-600/20 text-amber-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 bg-brand/20 text-brand-light px-4 py-2 rounded-full text-sm font-medium mb-6">
               <BookOpen className="w-4 h-4" />
               <span>Interior Design Insights</span>
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Blog & <span className="text-amber-400">Insights</span>
+              Blog & <span className="text-brand-light">Insights</span>
             </h1>
             
             <p className="text-lg sm:text-xl text-stone-300 max-w-3xl mx-auto">
@@ -50,7 +50,7 @@ const Blog = () => {
             {categories.map((category, index) => (
               <span
                 key={index}
-                className="px-4 py-2 bg-stone-100 text-stone-700 rounded-full text-sm font-medium hover:bg-amber-100 hover:text-amber-700 transition-colors cursor-pointer"
+                className="px-4 py-2 bg-stone-100 text-stone-700 rounded-full text-sm font-medium hover:bg-brand-soft hover:text-brand-dark transition-colors cursor-pointer"
               >
                 {category}
               </span>
@@ -74,7 +74,7 @@ const Blog = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-brand text-white px-3 py-1 rounded-full text-sm font-medium">
                     {featuredPost.category}
                   </span>
                 </div>
@@ -93,7 +93,7 @@ const Blog = () => {
                   </span>
                 </div>
                 
-                <h3 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-4 group-hover:text-amber-600 transition-colors">
+                <h3 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-4 group-hover:text-brand transition-colors">
                   {featuredPost.title}
                 </h3>
                 
@@ -101,7 +101,7 @@ const Blog = () => {
                   {featuredPost.excerpt}
                 </p>
                 
-                <div className="flex items-center text-amber-600 font-semibold group-hover:text-amber-700">
+                <div className="flex items-center text-brand font-semibold group-hover:text-brand-dark">
                   <span>Read Full Article</span>
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
                 </div>
@@ -152,7 +152,7 @@ const Blog = () => {
                       </span>
                     </div>
                     
-                    <h3 className="text-lg font-bold text-stone-900 mb-3 group-hover:text-amber-600 transition-colors line-clamp-2">
+                    <h3 className="text-lg font-bold text-stone-900 mb-3 group-hover:text-brand transition-colors line-clamp-2">
                       {post.title}
                     </h3>
                     
@@ -160,7 +160,7 @@ const Blog = () => {
                       {post.excerpt}
                     </p>
                     
-                    <div className="flex items-center text-amber-600 text-sm font-semibold">
+                    <div className="flex items-center text-brand text-sm font-semibold">
                       <span>Read More</span>
                       <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                     </div>
@@ -173,7 +173,7 @@ const Blog = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-amber-50 to-stone-100">
+      <section className="py-16 bg-gradient-to-br from-brand-soft to-stone-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-4">
             Have Questions About Your Project?
@@ -183,7 +183,7 @@ const Blog = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg"
+            className="inline-flex items-center justify-center bg-brand hover:bg-brand-dark text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg"
           >
             Get Free Consultation
             <ArrowRight className="w-5 h-5 ml-2" />
