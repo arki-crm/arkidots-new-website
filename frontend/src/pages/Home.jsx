@@ -574,8 +574,8 @@ const Home = () => {
       <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Ready to Transform Your Home?</h2>
-            <p className="text-lg text-stone-600">Get a free consultation and personalized quote today</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Get Your Free Consultation from Arki Dots</h2>
+            <p className="text-lg text-stone-600">Contact us for a free home visit in Vatakara, Kozhikode, Kannur, or anywhere in Kerala</p>
           </div>
           
           <Card className="border-0 shadow-2xl">
