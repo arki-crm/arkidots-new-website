@@ -113,24 +113,28 @@ const Home = () => {
 
   const faqs = [
     {
-      question: 'What is the cost of a complete home interior in Kerala?',
-      answer: 'The cost varies based on the size of your home, design complexity, and material choices. Typically, full home interiors range from ₹5 lakhs to ₹25 lakhs. We provide detailed quotations after the initial consultation.'
+      question: 'What is the cost of a modular kitchen in Vatakara or Kozhikode?',
+      answer: 'Arki Dots offers modular kitchens starting from ₹1.5 lakhs in Vatakara, Kozhikode, and surrounding areas. The final cost depends on kitchen size, materials, and finish options. We provide transparent pricing with detailed quotations after a free home visit.'
     },
     {
-      question: 'How long does it take to complete a modular kitchen?',
-      answer: 'A modular kitchen typically takes 3-4 weeks from design approval to installation. The timeline depends on the kitchen size, customization level, and material availability.'
+      question: 'Does Arki Dots provide interior design services in Kannur and Thalassery?',
+      answer: 'Yes, Arki Dots serves homeowners across North Kerala including Kannur, Thalassery, Nadapuram, and all areas between Kozhikode and Kannur. Being based in Vatakara, we offer convenient service coverage throughout the region.'
     },
     {
-      question: 'Do you provide warranty on your interior work?',
-      answer: 'Yes, we provide a comprehensive warranty on all our work. Hardware and fittings come with 1-2 years warranty, while our workmanship is guaranteed for 5 years.'
+      question: 'How long does Arki Dots take to complete a full home interior?',
+      answer: 'A complete home interior project typically takes 45-60 days from design approval to handover. For homes in Vatakara and Kozhikode, we often complete faster due to proximity. Arki Dots maintains clear timelines with regular progress updates.'
     },
     {
-      question: 'Can I see design concepts before work begins?',
-      answer: 'Absolutely! We create detailed 3D visualizations and material samples for your approval before starting any work. You can request revisions until you\'re completely satisfied with the design.'
+      question: 'What warranty does Arki Dots provide on interior work?',
+      answer: 'Arki Dots provides a comprehensive 10-year warranty on all modular products including kitchens and wardrobes. We also offer lifetime free service support for all our clients across Kerala, ensuring long-term peace of mind.'
     },
     {
-      question: 'What is included in full home interior services?',
-      answer: 'Our full home interior package includes modular kitchen, wardrobes, TV units, false ceiling, lighting, painting, flooring guidance, and all civil work coordination. We handle everything from design to installation.'
+      question: 'Can I see Arki Dots completed projects in Kozhikode district?',
+      answer: 'Absolutely! We have numerous completed projects in Vatakara, Nadapuram, Kozhikode city, Thalassery, and Kannur. Contact Arki Dots for a portfolio viewing or visit to a nearby completed project to see our quality firsthand.'
+    },
+    {
+      question: 'What is included in Arki Dots full home interior package?',
+      answer: 'Our full home interior package includes modular kitchen, wardrobes, TV units, false ceiling, lighting design, painting, and complete coordination. Arki Dots handles everything from design to installation, serving clients across Kerala with premium quality.'
     }
   ];
 
