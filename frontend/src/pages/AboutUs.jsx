@@ -67,7 +67,7 @@ const AboutUs = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-amber-50">
+      <section className="relative py-20 bg-gradient-to-br from-stone-50 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-stone-900 mb-6 leading-tight">
             About Arki Dots
@@ -100,7 +100,7 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Compass className="w-4 h-4" />
                 <span>Our Vision</span>
               </div>
@@ -142,7 +142,7 @@ const AboutUs = () => {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Target className="w-4 h-4" />
                 <span>Our Mission</span>
               </div>
@@ -177,7 +177,7 @@ const AboutUs = () => {
             {workingProcess.map((phase, index) => (
               <Card key={index} className="border-0 shadow-lg relative">
                 <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-amber-600 text-white rounded-full flex items-center justify-center mb-4 text-xl font-bold">
+                  <div className="w-12 h-12 bg-brand text-white rounded-full flex items-center justify-center mb-4 text-xl font-bold">
                     {phase.step}
                   </div>
                   <h3 className="text-xl font-semibold text-stone-900 mb-3">{phase.title}</h3>
@@ -203,7 +203,7 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {clientExpectations.map((expectation, index) => (
               <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 text-amber-600 rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-soft text-brand rounded-full mb-4">
                   {expectation.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900 mb-3">{expectation.title}</h3>
@@ -217,32 +217,32 @@ const AboutUs = () => {
       {/* Our Commitment */}
       <section className="py-20 bg-stone-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="border-0 shadow-xl bg-gradient-to-br from-white to-amber-50">
+          <Card className="border-0 shadow-xl bg-gradient-to-br from-white to-brand-soft">
             <CardContent className="p-8 sm:p-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-6 text-center">
                 Our Commitment to You
               </h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-brand flex-shrink-0 mt-1" />
                   <p className="text-stone-700 leading-relaxed">
                     <strong>Detailed Planning:</strong> Every project starts with comprehensive planning. You'll see designs, understand costs, and know timelines before work begins.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-brand flex-shrink-0 mt-1" />
                   <p className="text-stone-700 leading-relaxed">
                     <strong>Quality Materials:</strong> We use materials appropriate for Kerala's climate - moisture-resistant, termite-proof, and built to last through monsoons and humidity.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-brand flex-shrink-0 mt-1" />
                   <p className="text-stone-700 leading-relaxed">
                     <strong>Skilled Execution:</strong> Our craftsmen and installation teams are experienced in working with Kerala homes - understanding local construction, managing space constraints, and coordinating with existing structures.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-brand flex-shrink-0 mt-1" />
                   <p className="text-stone-700 leading-relaxed">
                     <strong>Post-Installation Support:</strong> We provide warranty on our work and remain available for any adjustments or questions after project completion.
                   </p>
@@ -267,7 +267,7 @@ const AboutUs = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-stone-100 to-amber-50">
+      <section className="py-20 bg-gradient-to-br from-stone-100 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-6">
             Let's Discuss Your Project
@@ -278,7 +278,7 @@ const AboutUs = () => {
           <div className="flex flex-wrap gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               onClick={() => navigate('/contact')}
             >
               Speak with Our Design Team
@@ -287,7 +287,7 @@ const AboutUs = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-2 border-stone-300 hover:border-amber-600 text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
+              className="border-2 border-stone-300 hover:border-brand text-stone-900 px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
               onClick={() => navigate('/')}
             >
               View Our Services
