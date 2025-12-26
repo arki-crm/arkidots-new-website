@@ -93,7 +93,7 @@ const DesignCategory = () => {
       <div className="min-h-screen flex items-center justify-center bg-stone-50">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-stone-900 mb-4">Category Not Found</h1>
-          <Link to="/design-ideas" className="text-amber-600 hover:text-amber-700 font-medium">
+          <Link to="/design-ideas" className="text-brand hover:text-brand-dark font-medium">
             ← Back to Design Ideas
           </Link>
         </div>
@@ -123,7 +123,7 @@ const DesignCategory = () => {
           {/* Breadcrumb */}
           <Link
             to="/design-ideas"
-            className="inline-flex items-center text-stone-400 hover:text-amber-400 transition-colors mb-6"
+            className="inline-flex items-center text-stone-400 hover:text-brand-light transition-colors mb-6"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Design Ideas
@@ -138,7 +138,7 @@ const DesignCategory = () => {
           </p>
 
           {/* Inspiration Disclaimer */}
-          <div className="inline-flex items-center gap-2 bg-amber-600/20 text-amber-400 px-4 py-2 rounded-lg text-sm">
+          <div className="inline-flex items-center gap-2 bg-brand/20 text-brand-light px-4 py-2 rounded-lg text-sm">
             <Lightbulb className="w-4 h-4" />
             <span>Design inspiration images to help you explore styles and possibilities</span>
           </div>
@@ -172,7 +172,7 @@ const DesignCategory = () => {
                   {/* Caption */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                     <p className="text-white font-medium text-sm">{idea.caption}</p>
-                    <span className="text-amber-400 text-xs">{idea.style}</span>
+                    <span className="text-brand-light text-xs">{idea.style}</span>
                   </div>
 
                   {/* Style Badge (visible by default) */}
@@ -209,12 +209,12 @@ const DesignCategory = () => {
                   return (
                     <div
                       key={index}
-                      className="bg-white rounded-xl p-6 border border-stone-200 hover:border-amber-200 hover:shadow-lg transition-all duration-300"
+                      className="bg-white rounded-xl p-6 border border-stone-200 hover:border-brand-muted hover:shadow-lg transition-all duration-300"
                     >
                       <div className="flex gap-4">
                         <div className="flex-shrink-0">
-                          <div className="w-12 h-12 bg-gradient-to-br from-amber-100 to-amber-50 rounded-xl flex items-center justify-center">
-                            <IconComponent className="w-6 h-6 text-amber-600" />
+                          <div className="w-12 h-12 bg-gradient-to-br from-brand-soft to-brand-soft rounded-xl flex items-center justify-center">
+                            <IconComponent className="w-6 h-6 text-brand" />
                           </div>
                         </div>
                         <div className="flex-1">
@@ -232,11 +232,11 @@ const DesignCategory = () => {
               </div>
 
               {/* Customization Note */}
-              <div className="mt-8 bg-gradient-to-r from-amber-50 to-stone-50 rounded-xl p-6 border border-amber-100">
+              <div className="mt-8 bg-gradient-to-r from-brand-soft to-stone-50 rounded-xl p-6 border border-brand-soft">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
-                      <Lightbulb className="w-5 h-5 text-amber-600" />
+                    <div className="w-10 h-10 bg-brand-soft rounded-full flex items-center justify-center">
+                      <Lightbulb className="w-5 h-5 text-brand" />
                     </div>
                   </div>
                   <div>
@@ -251,7 +251,7 @@ const DesignCategory = () => {
           )}
 
           {/* CTA Banner */}
-          <div className="mt-16 bg-gradient-to-br from-amber-50 to-stone-100 rounded-2xl p-8 sm:p-12 border border-amber-200">
+          <div className="mt-16 bg-gradient-to-br from-brand-soft to-stone-100 rounded-2xl p-8 sm:p-12 border border-brand-muted">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="text-center md:text-left">
                 <h3 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-2">
@@ -264,7 +264,7 @@ const DesignCategory = () => {
               <Link to="/contact">
                 <Button
                   size="lg"
-                  className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 whitespace-nowrap"
+                  className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 whitespace-nowrap"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   Talk to Our Designer
@@ -300,7 +300,7 @@ const DesignCategory = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <p className="text-white font-semibold text-sm sm:text-base group-hover:text-amber-400 transition-colors">
+                    <p className="text-white font-semibold text-sm sm:text-base group-hover:text-brand-light transition-colors">
                       {cat.title}
                     </p>
                   </div>
@@ -327,7 +327,7 @@ const DesignCategory = () => {
             {/* Close Button */}
             <button
               onClick={closeLightbox}
-              className="absolute -top-12 right-0 text-white hover:text-amber-400 transition-colors p-2"
+              className="absolute -top-12 right-0 text-white hover:text-brand-light transition-colors p-2"
               aria-label="Close"
             >
               <X className="w-8 h-8" />
@@ -336,7 +336,7 @@ const DesignCategory = () => {
             {/* Navigation Arrows */}
             <button
               onClick={goToPrevious}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 sm:-translate-x-16 text-white hover:text-amber-400 transition-colors p-2"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 sm:-translate-x-16 text-white hover:text-brand-light transition-colors p-2"
               aria-label="Previous image"
             >
               <ChevronLeft className="w-10 h-10" />
@@ -344,7 +344,7 @@ const DesignCategory = () => {
 
             <button
               onClick={goToNext}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 sm:translate-x-16 text-white hover:text-amber-400 transition-colors p-2"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 sm:translate-x-16 text-white hover:text-brand-light transition-colors p-2"
               aria-label="Next image"
             >
               <ChevronRight className="w-10 h-10" />
@@ -364,7 +364,7 @@ const DesignCategory = () => {
               <h3 className="text-xl font-semibold text-white">
                 {selectedImage.caption}
               </h3>
-              <p className="text-amber-400">{selectedImage.style}</p>
+              <p className="text-brand-light">{selectedImage.style}</p>
               <p className="text-stone-500 text-sm mt-2">
                 {currentIndex + 1} of {ideas.length}
               </p>
