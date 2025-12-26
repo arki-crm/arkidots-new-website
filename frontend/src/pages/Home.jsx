@@ -141,13 +141,25 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Arki Dots | Best Interior Designers in Kerala | Modular Kitchen & Home Interiors</title>
+        <meta name="description" content="Arki Dots - Premium interior designers in Kerala. Expert modular kitchen design, full home interiors, wardrobes, and renovations. Based in Vatakara, serving Kozhikode, Kannur & all Kerala. Get free consultation." />
+        <meta name="keywords" content="interior designers Kerala, modular kitchen Kerala, home interior design, Vatakara interior, Kozhikode interior designers, Kannur home interiors, wardrobes Kerala" />
+        <meta property="og:title" content="Arki Dots | Best Interior Designers in Kerala" />
+        <meta property="og:description" content="Transform your home with Arki Dots. Premium modular kitchens, wardrobes, and complete home interiors in Kerala." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://arkidots.com/" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg" 
-            alt="Modern luxury home interior" 
+            alt="Modern luxury home interior design by Arki Dots Kerala" 
             className="w-full h-full object-cover"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-stone-900/90 via-stone-900/70 to-stone-900/50"></div>
         </div>
