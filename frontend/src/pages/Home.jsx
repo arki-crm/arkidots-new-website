@@ -157,7 +157,7 @@ const Home = () => {
             </p>
             <Button 
               size="lg" 
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="bg-brand hover:bg-brand-dark text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}
             >
               Get Free Consultation
@@ -215,15 +215,15 @@ const Home = () => {
 
           <div className="max-w-5xl mx-auto">
             {/* Step 1 */}
-            <div className="relative pb-12 mb-12 border-l-2 border-amber-200 ml-8 last:border-l-0">
-              <div className="absolute -left-10 top-0 w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
+            <div className="relative pb-12 mb-12 border-l-2 border-brand-muted ml-8 last:border-l-0">
+              <div className="absolute -left-10 top-0 w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
                 01
               </div>
               <div className="ml-12">
                 <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6 sm:p-8">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center">
+                      <div className="flex-shrink-0 w-12 h-12 bg-brand-soft text-brand rounded-lg flex items-center justify-center">
                         <UserCheck className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
@@ -242,15 +242,15 @@ const Home = () => {
             </div>
 
             {/* Step 2 */}
-            <div className="relative pb-12 mb-12 border-l-2 border-amber-200 ml-8">
-              <div className="absolute -left-10 top-0 w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
+            <div className="relative pb-12 mb-12 border-l-2 border-brand-muted ml-8">
+              <div className="absolute -left-10 top-0 w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
                 02
               </div>
               <div className="ml-12">
                 <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6 sm:p-8">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center">
+                      <div className="flex-shrink-0 w-12 h-12 bg-brand-soft text-brand rounded-lg flex items-center justify-center">
                         <Pencil className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
@@ -259,7 +259,7 @@ const Home = () => {
                           Confirm the project and begin detailed design phase. We create 3D visualizations, material selections, and comprehensive project plan for your approval.
                         </p>
                         <div className="flex flex-wrap gap-3">
-                          <div className="inline-block bg-amber-50 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold border border-amber-200">
+                          <div className="inline-block bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-semibold border border-brand-muted">
                             5% Payment or ₹25,000
                           </div>
                           <span className="text-stone-500 text-sm self-center">(Whichever is lower)</span>
@@ -272,15 +272,15 @@ const Home = () => {
             </div>
 
             {/* Step 3 */}
-            <div className="relative pb-12 mb-12 border-l-2 border-amber-200 ml-8">
-              <div className="absolute -left-10 top-0 w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
+            <div className="relative pb-12 mb-12 border-l-2 border-brand-muted ml-8">
+              <div className="absolute -left-10 top-0 w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
                 03
               </div>
               <div className="ml-12">
                 <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6 sm:p-8">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center">
+                      <div className="flex-shrink-0 w-12 h-12 bg-brand-soft text-brand rounded-lg flex items-center justify-center">
                         <PlayCircle className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
@@ -288,7 +288,7 @@ const Home = () => {
                         <p className="text-stone-600 leading-relaxed mb-4">
                           Production and execution start after your design approval. Manufacturing of modular components, procurement of materials, and coordination of work begins.
                         </p>
-                        <div className="inline-block bg-amber-50 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold border border-amber-200">
+                        <div className="inline-block bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-semibold border border-brand-muted">
                           50% Payment
                         </div>
                       </div>
@@ -299,15 +299,15 @@ const Home = () => {
             </div>
 
             {/* Step 4 */}
-            <div className="relative pb-12 mb-12 border-l-2 border-amber-200 ml-8">
-              <div className="absolute -left-10 top-0 w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
+            <div className="relative pb-12 mb-12 border-l-2 border-brand-muted ml-8">
+              <div className="absolute -left-10 top-0 w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
                 04
               </div>
               <div className="ml-12">
                 <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6 sm:p-8">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center">
+                      <div className="flex-shrink-0 w-12 h-12 bg-brand-soft text-brand rounded-lg flex items-center justify-center">
                         <Package className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
@@ -315,7 +315,7 @@ const Home = () => {
                         <p className="text-stone-600 leading-relaxed mb-4">
                           All work completed and quality-checked. Final payment is made before professional installation and delivery at your Kerala home begins.
                         </p>
-                        <div className="inline-block bg-amber-50 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold border border-amber-200">
+                        <div className="inline-block bg-brand-soft text-brand-dark px-4 py-2 rounded-full text-sm font-semibold border border-brand-muted">
                           100% Payment Complete
                         </div>
                       </div>
@@ -327,14 +327,14 @@ const Home = () => {
 
             {/* Step 5 */}
             <div className="relative ml-8">
-              <div className="absolute -left-10 top-0 w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
+              <div className="absolute -left-10 top-0 w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
                 05
               </div>
               <div className="ml-12">
-                <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-white to-amber-50">
+                <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-white to-brand-soft">
                   <CardContent className="p-6 sm:p-8">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center">
+                      <div className="flex-shrink-0 w-12 h-12 bg-brand-soft text-brand rounded-lg flex items-center justify-center">
                         <Key className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
@@ -362,27 +362,27 @@ const Home = () => {
 
           {/* Payment Summary Box */}
           <div className="mt-16 max-w-4xl mx-auto">
-            <Card className="border-2 border-amber-200 shadow-xl bg-gradient-to-br from-amber-50 to-white">
+            <Card className="border-2 border-brand-muted shadow-xl bg-gradient-to-br from-brand-soft to-white">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-stone-900 mb-6 text-center">Payment Schedule Summary</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-amber-600 mb-2">5%</div>
+                    <div className="text-3xl font-bold text-brand mb-2">5%</div>
                     <p className="text-sm text-stone-600 font-medium">Design Booking</p>
                     <p className="text-xs text-stone-500 mt-1">(or ₹25,000)</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-amber-600 mb-2">50%</div>
+                    <div className="text-3xl font-bold text-brand mb-2">50%</div>
                     <p className="text-sm text-stone-600 font-medium">Execution Starts</p>
                     <p className="text-xs text-stone-500 mt-1">Production begins</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-amber-600 mb-2">45%</div>
+                    <div className="text-3xl font-bold text-brand mb-2">45%</div>
                     <p className="text-sm text-stone-600 font-medium">Before Installation</p>
                     <p className="text-xs text-stone-500 mt-1">Final payment</p>
                   </div>
                 </div>
-                <div className="mt-6 pt-6 border-t border-amber-200 text-center">
+                <div className="mt-6 pt-6 border-t border-brand-muted text-center">
                   <p className="text-sm text-stone-600">
                     <strong>Note:</strong> All payments are clearly defined before work begins. No hidden costs or surprise charges.
                   </p>
@@ -402,9 +402,9 @@ const Home = () => {
           </div>
 
           {/* Premium Modular Products Highlights */}
-          <div className="mb-16 bg-gradient-to-br from-amber-50 to-stone-50 rounded-2xl p-8 border-2 border-amber-200">
+          <div className="mb-16 bg-gradient-to-br from-brand-soft to-stone-50 rounded-2xl p-8 border-2 border-brand-muted">
             <div className="text-center mb-8">
-              <span className="inline-block bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-3">
+              <span className="inline-block bg-brand text-white px-4 py-2 rounded-full text-sm font-semibold mb-3">
                 Modular Products Advantage
               </span>
               <p className="text-stone-700 text-sm max-w-2xl mx-auto">
@@ -414,9 +414,9 @@ const Home = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* 10-Year Warranty */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-amber-100 hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
+              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-brand-soft hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4">
                     <Shield className="w-8 h-8" />
                   </div>
                   <h3 className="text-xl font-bold text-stone-900 mb-2">10-Year Flat Warranty</h3>
@@ -427,9 +427,9 @@ const Home = () => {
               </div>
 
               {/* Lifetime Free Service */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-amber-100 hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
+              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-brand-soft hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
                   <h3 className="text-xl font-bold text-stone-900 mb-2">Lifetime Free Service</h3>
@@ -440,9 +440,9 @@ const Home = () => {
               </div>
 
               {/* 30-Day Delivery */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-amber-100 hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
+              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-brand-soft hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4">
                     <Clock className="w-8 h-8" />
                   </div>
                   <h3 className="text-xl font-bold text-stone-900 mb-2">30-Day Delivery</h3>
@@ -458,7 +458,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyChoose.map((item, index) => (
               <div key={index} className="text-center group hover:scale-105 transition-transform duration-300">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 text-amber-600 rounded-full mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-300">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-soft text-brand rounded-full mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-300">
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900 mb-2">{item.title}</h3>
@@ -512,8 +512,8 @@ const Home = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               {locations.map((location, index) => (
-                <div key={index} className="flex items-center gap-2 bg-stone-100 px-6 py-3 rounded-full hover:bg-amber-100 transition-colors duration-300">
-                  <MapPin className="w-5 h-5 text-amber-600" />
+                <div key={index} className="flex items-center gap-2 bg-stone-100 px-6 py-3 rounded-full hover:bg-brand-soft transition-colors duration-300">
+                  <MapPin className="w-5 h-5 text-brand" />
                   <span className="font-medium text-stone-900">{location}</span>
                 </div>
               ))}
@@ -533,7 +533,7 @@ const Home = () => {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="bg-white mb-4 rounded-lg px-6 border-0 shadow-sm">
-                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-amber-600 transition-colors">
+                <AccordionTrigger className="text-left font-semibold text-stone-900 hover:text-brand transition-colors">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-stone-600 leading-relaxed">
@@ -546,7 +546,7 @@ const Home = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-amber-50">
+      <section id="contact-form" className="py-20 bg-gradient-to-br from-stone-100 to-brand-soft">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Ready to Transform Your Home?</h2>
@@ -563,7 +563,7 @@ const Home = () => {
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     placeholder="Enter your name"
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
@@ -575,7 +575,7 @@ const Home = () => {
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                     placeholder="Enter your phone number"
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
@@ -587,7 +587,7 @@ const Home = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     placeholder="Enter your email"
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
@@ -598,14 +598,14 @@ const Home = () => {
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     placeholder="Tell us about your project requirements"
                     rows={4}
-                    className="border-stone-300 focus:border-amber-500 focus:ring-amber-500"
+                    className="border-stone-300 focus:border-brand focus:ring-brand"
                   />
                 </div>
                 
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-brand hover:bg-brand-dark text-white py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Submit Request
                 </Button>
