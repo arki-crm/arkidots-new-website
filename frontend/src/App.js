@@ -27,6 +27,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <main className="pt-16">
           <Routes>
