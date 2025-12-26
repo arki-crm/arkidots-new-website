@@ -18,6 +18,8 @@ import TermsConditions from './pages/TermsConditions';
 import WarrantyPolicy from './pages/WarrantyPolicy';
 import DesignIdeas from './pages/DesignIdeas';
 import DesignCategory from './pages/DesignCategory';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import { Toaster } from './components/ui/sonner';
 
 function App() {
