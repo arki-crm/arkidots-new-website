@@ -9,6 +9,7 @@ import FullHomeInteriors from './pages/FullHomeInteriors';
 import KozhikodeInteriors from './pages/KozhikodeInteriors';
 import Contact from './pages/Contact';
 import HomeRenovation from './pages/HomeRenovation';
+import CustomFurniture from './pages/CustomFurniture';
 import { Toaster } from './components/ui/sonner';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/interior-designers-kozhikode" element={<KozhikodeInteriors />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/home-renovation" element={<HomeRenovation />} />
+            <Route path="/custom-furniture" element={<CustomFurniture />} />
           </Routes>
         </main>
         <Footer />
