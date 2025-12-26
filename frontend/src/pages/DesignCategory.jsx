@@ -181,6 +181,70 @@ const DesignCategory = () => {
             ))}
           </div>
 
+          {/* Design Highlights Section */}
+          {category.highlights && (
+            <div className="mt-20">
+              <div className="text-center mb-12">
+                <span className="inline-flex items-center gap-2 bg-stone-100 text-stone-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                  <Info className="w-4 h-4" />
+                  Material Guide
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-3">
+                  Design Highlights
+                </h2>
+                <p className="text-stone-600 max-w-2xl mx-auto">
+                  {category.highlights.intro}
+                </p>
+              </div>
+
+              {/* Features Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {category.highlights.features.map((feature, index) => {
+                  const IconComponent = iconMap[feature.icon] || Layers;
+                  return (
+                    <div
+                      key={index}
+                      className="bg-white rounded-xl p-6 border border-stone-200 hover:border-amber-200 hover:shadow-lg transition-all duration-300"
+                    >
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0">
+                          <div className="w-12 h-12 bg-gradient-to-br from-amber-100 to-amber-50 rounded-xl flex items-center justify-center">
+                            <IconComponent className="w-6 h-6 text-amber-600" />
+                          </div>
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-lg font-semibold text-stone-900 mb-2">
+                            {feature.title}
+                          </h3>
+                          <p className="text-stone-600 text-sm leading-relaxed">
+                            {feature.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Customization Note */}
+              <div className="mt-8 bg-gradient-to-r from-amber-50 to-stone-50 rounded-xl p-6 border border-amber-100">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
+                      <Lightbulb className="w-5 h-5 text-amber-600" />
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-stone-900 mb-1">Customization Available</h4>
+                    <p className="text-stone-600 text-sm">
+                      {category.highlights.note}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* CTA Banner */}
           <div className="mt-16 bg-gradient-to-br from-amber-50 to-stone-100 rounded-2xl p-8 sm:p-12 border border-amber-200">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
