@@ -30,16 +30,21 @@ const Header = () => {
     }
   };
 
+  // Official Arki Dots Logo
+  const logoUrl = 'https://customer-assets.emergentagent.com/job_interiordesign-pro/artifacts/qfhhoque_log%20a%20only%20%282%29.png';
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#home" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-brand to-brand rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">AD</span>
-              </div>
+            <a href="#home" className="flex items-center space-x-3">
+              <img 
+                src={logoUrl} 
+                alt="Arki Dots Logo" 
+                className="h-10 w-10 object-contain"
+              />
               <span className="text-xl font-bold text-stone-900">Arki Dots</span>
             </a>
           </div>
