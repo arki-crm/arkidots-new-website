@@ -54,7 +54,7 @@ const Home = () => {
       description: 'Bespoke furniture pieces crafted to perfectly fit your space and style preferences.',
       image: 'https://images.pexels.com/photos/245208/pexels-photo-245208.jpeg',
       icon: <Sofa className="w-6 h-6" />,
-      link: '/'
+      link: '/custom-furniture'
     }
   ];
 
