@@ -209,7 +209,61 @@ const Home = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Why Choose Arki Dots</h2>
             <p className="text-lg text-stone-600 max-w-2xl mx-auto">Your trusted partner for creating beautiful, functional spaces</p>
           </div>
+
+          {/* Premium Modular Products Highlights */}
+          <div className="mb-16 bg-gradient-to-br from-amber-50 to-stone-50 rounded-2xl p-8 border-2 border-amber-200">
+            <div className="text-center mb-8">
+              <span className="inline-block bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-3">
+                Modular Products Advantage
+              </span>
+              <p className="text-stone-700 text-sm max-w-2xl mx-auto">
+                Industry-leading commitments for all our modular kitchens, wardrobes, and furniture
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* 10-Year Warranty */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-amber-100 hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mb-4">
+                    <Shield className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-xl font-bold text-stone-900 mb-2">10-Year Flat Warranty</h3>
+                  <p className="text-stone-600 leading-relaxed">
+                    Genuine 10-year flat warranty on all modular products. Long-term quality assurance and complete peace of mind.
+                  </p>
+                </div>
+              </div>
+
+              {/* Lifetime Free Service */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-amber-100 hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mb-4">
+                    <CheckCircle2 className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-xl font-bold text-stone-900 mb-2">Lifetime Free Service</h3>
+                  <p className="text-stone-600 leading-relaxed">
+                    Lifetime free service support for all modular installations, even after project completion. We're always here to help.
+                  </p>
+                </div>
+              </div>
+
+              {/* 30-Day Delivery */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-amber-100 hover:border-amber-300 transition-all duration-300 hover:shadow-xl">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mb-4">
+                    <Clock className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-xl font-bold text-stone-900 mb-2">30-Day Delivery</h3>
+                  <p className="text-stone-600 leading-relaxed">
+                    Structured process enables delivery and installation of modular products within 30 days. Fast, reliable execution.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           
+          {/* Existing Why Choose Items */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyChoose.map((item, index) => (
               <div key={index} className="text-center group hover:scale-105 transition-transform duration-300">
