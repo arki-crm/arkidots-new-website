@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
+  // Official Arki Dots Logo
+  const logoUrl = 'https://customer-assets.emergentagent.com/job_interiordesign-pro/artifacts/qfhhoque_log%20a%20only%20%282%29.png';
+  
   const serviceLocations = [
     'Vatakara', 'Nadapuram', 'Kozhikode', 'Thalassery', 'Kannur', 
     'Koyilandy', 'Quilandy', 'Mahe', 'Payyannur', 'Kasaragod'
