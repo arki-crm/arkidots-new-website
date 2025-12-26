@@ -13,6 +13,9 @@ import CustomFurniture from './pages/CustomFurniture';
 import AboutUs from './pages/AboutUs';
 import Gallery from './pages/Gallery';
 import ProjectDetail from './pages/ProjectDetail';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsConditions from './pages/TermsConditions';
+import WarrantyPolicy from './pages/WarrantyPolicy';
 import { Toaster } from './components/ui/sonner';
 
 function App() {
@@ -32,6 +35,9 @@ function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/projects/:projectId" element={<ProjectDetail />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-conditions" element={<TermsConditions />} />
+            <Route path="/warranty-policy" element={<WarrantyPolicy />} />
           </Routes>
         </main>
         <Footer />
