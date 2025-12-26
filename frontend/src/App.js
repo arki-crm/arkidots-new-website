@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import ModularKitchen from './pages/ModularKitchen';
 import FullHomeInteriors from './pages/FullHomeInteriors';
 import KozhikodeInteriors from './pages/KozhikodeInteriors';
+import Contact from './pages/Contact';
 import { Toaster } from './components/ui/sonner';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/modular-kitchen" element={<ModularKitchen />} />
             <Route path="/full-home-interiors" element={<FullHomeInteriors />} />
             <Route path="/interior-designers-kozhikode" element={<KozhikodeInteriors />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
